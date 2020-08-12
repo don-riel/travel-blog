@@ -1,9 +1,9 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
-
-import styles from '../../styles/about-styles.module.css';
 import '../../styles/global-styles.module.css'
+import styles from '../../styles/about-styles.module.css'
+
 
 export default function AboutPage() {
     const data = useStaticQuery(graphql`
