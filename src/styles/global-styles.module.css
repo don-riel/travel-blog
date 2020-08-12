@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #1d1c1c;
+}
+
+h3 {
+      color: #BF7331;
+      font-weight: 400;
+  }
+
+p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
