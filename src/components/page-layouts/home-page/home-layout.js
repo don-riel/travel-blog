@@ -3,23 +3,23 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 
 import BlogPreview from '../../blog-item-preview/blog-item-preview'
+import styles from './home-layout-styles.css'
 
 export default function HomePage() {
     const data = useStaticQuery(graphql`
         query {
-            allMarkdownRemark {
+          allMarkdownRemark(filter: {frontmatter: {type: {eq: "blog_item"}}}) {
               edges {
                 node {
                   id
                   frontmatter {
-                    date
-                    intro
                     title
                     place
+                    intro
+                    date
                   }
                 }
               }
-              totalCount
             }
             telemark: file(relativePath: { eq: "blog/telemark/img1.JPG" }) {
                 childImageSharp {
@@ -56,16 +56,58 @@ export default function HomePage() {
                   }
                 }
             }
+            rampestreken: file(relativePath: { eq: "blog/rampestreken/img1.JPG" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
+            akerselva: file(relativePath: { eq: "blog/akerselva/img1.JPG" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
+            autumn: file(relativePath: { eq: "blog/autumn-in-osl/img1.JPG" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
+            dog_sledding: file(relativePath: { eq: "blog/dog-sledding/img1.jpg" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
+            osl_dec: file(relativePath: { eq: "blog/osl-in-dec/img1.JPG" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
+            bergen: file(relativePath: { eq: "blog/bergen/img1.JPG" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
           }
           
          `
     )
    
-
     return (
         <div>
             {
                 data.allMarkdownRemark.edges.map(({node}) => {
+             
                     let imgData = null;
                     switch (node.frontmatter.place) {
                         case 'telemark':
@@ -83,16 +125,29 @@ export default function HomePage() {
                         case 'kongens_utsikt':
                             imgData = data.kongens_utsikt.childImageSharp.fluid
                             break;
+                        case 'rampestreken':
+                            imgData = data.rampestreken.childImageSharp.fluid
+                            break;
+                        case 'akerselva':
+                            imgData = data.akerselva.childImageSharp.fluid
+                            break;
+                        case 'autumn':
+                            imgData = data.autumn.childImageSharp.fluid
+                            break;
+                        case 'dog_sledding':
+                            imgData = data.dog_sledding.childImageSharp.fluid
+                            break;
+                        case 'osl_dec':
+                            imgData = data.osl_dec.childImageSharp.fluid
+                            break;
+                        case 'bergen':
+                            imgData = data.bergen.childImageSharp.fluid
+                            break;
                         default:
                             break;
-                    }
-                
-                    if(node.id === "cd04d8f9-ad25-561b-a95f-ca62ddd44d4d") {
-                        return
-                    }
-                
-                    return (
-                        <div key={node.id}>
+                       }
+                       return (
+                         <div key={node.id}>
                             <BlogPreview 
                                 imgData={imgData}
                                 title={node.frontmatter.title}  
@@ -100,9 +155,10 @@ export default function HomePage() {
                                 date={node.frontmatter.date}
                                 toLink="/"  
                             />
-                        </div>
-                    )
-                })
+                          </div>
+                       )
+                  }
+                )
             }
         </div>
     )

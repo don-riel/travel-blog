@@ -37,8 +37,8 @@
     font-weight: 700;
     font-size: 2rem;
     cursor: pointer;
-    position: fixed;
-    left: 98%;
+    /* position: fixed;
+    left: 98%; */
 }
 
 /* nav */
