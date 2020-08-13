@@ -7,11 +7,8 @@ import Nav from '../nav-link/nav-link'
 import styles from './header-styles.module.css'
 
 
-
 const Header = ({ siteTitle, siteAuthor }) => {
   const [navOpen, setNavOpen] = useState(false);
-
- 
 
   const toggleNav = (event) => {
     console.log(navOpen)
@@ -40,10 +37,24 @@ const Header = ({ siteTitle, siteAuthor }) => {
             className={styles.author}>by {siteAuthor}
           </p>
       </div>
-        <button aria-label="Open navigation" className={`${styles.nav_open} ${navOpen ? styles.hidden : ""} ${styles.nav_dropDown_btn}`} onClick={toggleNav} >&#9776;</button>
+        <button 
+          aria-label="Open navigation" 
+          className={`${styles.nav_open} ${navOpen ? styles.hidden : ""} ${styles.nav_dropDown_btn}`} 
+          onClick={toggleNav} 
+        >
+          &#9776;
+        </button>
 
-        <div className={`${styles.nav} ${navOpen ? styles.nav_open : "" }`}>
-          <button aria-label="Close navigation" className={styles.close_nav} onClick={toggleNav}>&times;</button> 
+        <div 
+          className={`${styles.nav} ${navOpen ? styles.nav_open : "" }`}
+        >
+          <button 
+            aria-label="Close navigation" 
+            className={styles.close_nav} 
+            onClick={toggleNav}
+          >
+            &times;
+          </button> 
           <Nav />
         </div>
     </div>

@@ -1,0 +1,40 @@
+.blog_header {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.blog_title {
+    font-weight: 700;
+    color:#5B3402;
+
+}
+
+.blog_item_footer a {
+    font-size: 1rem;
+}
+.blog_item_footer p {
+    margin-bottom: 0;
+}
+
+.blog_item {
+    margin: 2em 0;
+}
+
+.blog_item img {
+    display: block;
+}
+
+.blog_content {
+    padding: 0.5em;
+    border: 1px solid rgb(180, 175, 175);
+    
+    
+}
+
+.blog_item_footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
