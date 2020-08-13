@@ -1,8 +1,9 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
-import '../../styles/global-styles.module.css'
-import styles from '../../styles/about-styles.module.css'
+
+
+import styles from './about-styles.module.css'
 
 
 export default function AboutPage() {

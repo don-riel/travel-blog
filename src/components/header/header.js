@@ -1,9 +1,11 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, {useState, useEffect} from "react"
+import React, {useState} from "react"
 
-import styles from '../../styles/header-styles.module.css'
-import '../../styles/global-styles.module.css'
+import Nav from '../nav-link/nav-link'
+
+import styles from './header-styles.module.css'
+
 
 
 const Header = ({ siteTitle, siteAuthor }) => {
@@ -42,11 +44,7 @@ const Header = ({ siteTitle, siteAuthor }) => {
 
         <div className={`${styles.nav} ${navOpen ? styles.nav_open : "" }`}>
           <button aria-label="Close navigation" className={styles.close_nav} onClick={toggleNav}>&times;</button> 
-          <div className={styles.nav_list}>
-            <Link to="/" className={styles.nav_item}>Home</Link> 
-            <Link to="/about/" className={styles.nav_item}>About</Link> 
-            <Link to="/page-2/" className={styles.nav_item}>page 2</Link> 
-          </div>
+          <Nav />
         </div>
     </div>
   </header>
