@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
 }
 
@@ -15,10 +14,16 @@ body {
     letter-spacing: 1.5px;
 }
 
+
 main {
     width: 95%;
     max-width: 900px;
     margin: 2em auto;
+}
+
+aside {
+    width: 95%;
+    margin: 0 auto;
 }
 
 h2 {
@@ -36,15 +41,42 @@ h3 {
 p {
     font-size: 0.9rem;
     letter-spacing: 1.2px;
+    color: #6e6c6c;
 }
 
 a {
-    color: #1d1c1c;
+    color: #BF7331;
     text-decoration: none;
 }
 header {
-    background: rgba(247, 216, 187, 0.102);
+    background: rgba(247, 216, 187, 0.202);
     padding: 1em;
     width: 100%;
+    margin: 0;
 }
+
+@media (min-width: 750px) {
+    html {
+        font-size: 18px;
+    }
+    .body {
+        display: flex;
+        
+        max-width: 950px;
+        margin: 0 auto;
+    }
+
+    main {
+        width: 67%;
+        margin-left: 0;
+    }
+
+    aside {
+        width: 30%;
+        padding: 0;
+    }
+}
+
+
+
 

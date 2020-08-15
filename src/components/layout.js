@@ -10,8 +10,10 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header/header"
+import Sidebar from '../components/sidebar/sidebar'
 // import "./layout.css"
-import "./global-styles.module.css"
+import  styles from "./global-styles.module.css"
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,14 +30,17 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} siteAuthor={data.site.siteMetadata.author} />
-      <div>
+      <div className={styles.body}>
         <main>{children}</main>
-        <footer>
+        <aside>
+          <Sidebar />
+        </aside>
+      </div>
+      <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
-      </div>
     </>
   )
 }

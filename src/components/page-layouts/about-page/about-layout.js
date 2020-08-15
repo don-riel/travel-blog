@@ -2,42 +2,14 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 
+import AboutMeData from '../../../queries/about-me-data'
 
 import styles from './about-styles.module.css'
 
 
 export default function AboutPage() {
-    const data = useStaticQuery(graphql`
-        query {
-            allMarkdownRemark {
-              edges {
-                node {
-                  frontmatter {
-                    date
-                    title
-                    sub1
-                    sub2
-                    p1
-                    p2
-                    p3
-                  }
-                  id
-                }
-              }
-            totalCount
-            }
-            placeholderImage: file(relativePath: { eq: "about-page/about-me.JPG" }) {
-                childImageSharp {
-                  fluid {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-            }
-          }
-         `
-    )
-    console.log(data)
-
+    const data = AboutMeData();
+  
     return (
         <div>
             <Img fluid={data.placeholderImage.childImageSharp.fluid} alt='a photo of me' className={styles.aboutImage} />

@@ -15,7 +15,7 @@ const BlogPreview = ({imgData, title,body,date, toLink }) => {
                 </div>
                 <div className={styles.blog_item_footer}>
                     <p className={styles.date}>{date}</p>
-                    <Link to={toLink}>Read More</Link>
+                    <Link to={toLink} className={styles.link}>Read full blog</Link>
                 </div>
             </div>
         </div>
