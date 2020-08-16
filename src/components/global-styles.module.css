@@ -21,10 +21,7 @@ main {
     margin: 2em auto;
 }
 
-aside {
-    width: 95%;
-    margin: 0 auto;
-}
+
 
 h2 {
     font-size: 1.5rem;
@@ -32,7 +29,7 @@ h2 {
 }
 
 h3 {
-    color: #BF7331;
+    color: #6e6c6c;
     font-weight: 400;
     font-size: 1.25rem;
     margin: 1em 0;
@@ -45,11 +42,12 @@ p {
 }
 
 a {
-    color: #BF7331;
+    color: #6e6c6c;
     text-decoration: none;
 }
 header {
-    background: rgba(247, 216, 187, 0.202);
+    box-sizing: initial;
+    /* background: rgba(247, 216, 187, 0.202); */
     padding: 1em;
     width: 100%;
     margin: 0;
@@ -61,20 +59,11 @@ header {
     }
     .body {
         display: flex;
-        
         max-width: 950px;
         margin: 0 auto;
     }
 
-    main {
-        width: 67%;
-        margin-left: 0;
-    }
-
-    aside {
-        width: 30%;
-        padding: 0;
-    }
+    
 }
 
 

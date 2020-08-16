@@ -34,10 +34,15 @@ const getImgFluid = (data, obj) => {
         case 'bergen':
             imgData = data.bergen.childImageSharp.fluid
             break;
+        // case 'trolltunga_2':
+        //     imgData = data.trolltunga_2.childImageSharp.fluid
+        //     break;
         default:
             break;
        }
        return imgData;
 }
+
+
 
 export default getImgFluid;

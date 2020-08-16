@@ -21,9 +21,7 @@ const Header = ({ siteTitle, siteAuthor }) => {
     <header
       className={styles.header}
     >
-    <div
-      className={styles.header_content}  
-    >
+    
       <div>
         <h2 style={{ margin: 0 }}>
             <Link
@@ -37,27 +35,8 @@ const Header = ({ siteTitle, siteAuthor }) => {
             className={styles.author}>by {siteAuthor}
           </p>
       </div>
-        <button 
-          aria-label="Open navigation" 
-          className={`${styles.nav_open} ${navOpen ? styles.hidden : ""} ${styles.nav_dropDown_btn}`} 
-          onClick={toggleNav} 
-        >
-          &#9776;
-        </button>
-
-        <div 
-          className={`${styles.nav} ${navOpen ? styles.nav_open : "" }`}
-        >
-          <button 
-            aria-label="Close navigation" 
-            className={styles.close_nav} 
-            onClick={toggleNav}
-          >
-            &times;
-          </button> 
-          <Nav />
-        </div>
-    </div>
+      <Nav className={styles.nav_link} />     
+   
   </header>
   )
   

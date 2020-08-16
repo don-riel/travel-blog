@@ -17,10 +17,10 @@ const Nav = () => {
                
             >   About
             </Link> 
-            <Link to="/page-2/" 
+            <Link to="/blog/" 
                 className={styles.nav_item} 
                
-            >   page 2
+            >   Blogs
             </Link> 
         </div>
     )

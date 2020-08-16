@@ -15,7 +15,8 @@ import Sidebar from '../components/sidebar/sidebar'
 import  styles from "./global-styles.module.css"
 
 
-const Layout = ({ children }) => {
+const Layout = ({children }) => {
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -32,9 +33,6 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} siteAuthor={data.site.siteMetadata.author} />
       <div className={styles.body}>
         <main>{children}</main>
-        <aside>
-          <Sidebar />
-        </aside>
       </div>
       <footer>
           © {new Date().getFullYear()}, Built with

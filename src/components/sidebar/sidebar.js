@@ -8,11 +8,10 @@ import AboutMeData from '../../queries/about-me-data'
 import getImgFluid from '../../utils/imgFluid.utils'
 import styles from './sidebar-styles.module.css'
 
-export default function Sidebar() {
-    console.log(AboutMeData())
+const Sidebar = () => {
     const sidebar_aboutMe_data = AboutMeData();
     const sidebar_item_data = LatestBlogs();
-
+    console.log(window.location.href)
     return (
 
         <div className={styles.sidebar}>
@@ -34,9 +33,8 @@ export default function Sidebar() {
                 {sidebar_item_data.allMarkdownRemark.edges.map(({node}) => {
                     let imgData = getImgFluid(sidebar_item_data, node.frontmatter.place)
                     return (
-                        <div className={styles.sidebar_item}>
+                        <div key={node.id} className={styles.sidebar_item}>
                             <SidebarItemPost 
-                                    key={node.id}
                                     title={node.frontmatter.title}
                                     imgData = {imgData}
                                     body = {node.frontmatter.intro}
@@ -51,3 +49,5 @@ export default function Sidebar() {
         </div>
     )
 }
+
+export default Sidebar;
