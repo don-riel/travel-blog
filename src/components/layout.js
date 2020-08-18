@@ -29,17 +29,19 @@ const Layout = ({children }) => {
   `)
 
   return (
-    <>
+    <div>
       <Header siteTitle={data.site.siteMetadata.title} siteAuthor={data.site.siteMetadata.author} />
-      <div className={styles.body}>
-        <main>{children}</main>
-      </div>
-      <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-    </>
+        <div className={styles.body}>
+          <main>{children}</main>
+        </div>
+        <footer>
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </footer>
+    </div>
+      
+    
   )
 }
 

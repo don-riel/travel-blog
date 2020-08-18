@@ -21,7 +21,8 @@ const Hero = () => {
                 className={`${styles.hero_img} ${styles.right_img}`} 
             />  
             <div className={styles.white}></div>
-            <div className={styles.shadow}></div>   
+            <div className={styles.shadow_left}></div>
+            <div className={styles.shadow_right}></div>   
         </div>
         
 
