@@ -7,21 +7,12 @@ import Nav from '../nav-link/nav-link'
 import styles from './header-styles.module.css'
 
 
-const Header = ({ siteTitle, siteAuthor }) => {
-  const [navOpen, setNavOpen] = useState(false);
-
-  const toggleNav = (event) => {
-    console.log(navOpen)
-    console.log(event.target.className)
-    setNavOpen(!navOpen)
-    console.log(navOpen)
-  }
-
+const Header = ({ siteTitle }) => {
+  
   return (
     <header
       className={styles.header}
     >
-    
       <div>
         <h2 style={{ margin: 0 }}>
             <Link
@@ -31,9 +22,7 @@ const Header = ({ siteTitle, siteAuthor }) => {
               {siteTitle}
             </Link>
           </h2>
-          <p 
-            className={styles.author}>by {siteAuthor}
-          </p>
+         
       </div>
       <Nav className={styles.nav_link} />     
    

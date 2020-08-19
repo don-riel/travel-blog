@@ -8,14 +8,14 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import { TransitionProvider, TransitionViews } from "gatsby-plugin-transitions"
 import Header from "./header/header"
 import Sidebar from '../components/sidebar/sidebar'
 // import "./layout.css"
 import  styles from "./global-styles.module.css"
 
 
-const Layout = ({children }) => {
+const Layout = ({location, children }) => {
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -29,17 +29,18 @@ const Layout = ({children }) => {
   `)
 
   return (
+    
     <div>
-      <Header siteTitle={data.site.siteMetadata.title} siteAuthor={data.site.siteMetadata.author} />
-        <div className={styles.body}>
-          <main>{children}</main>
-        </div>
-        <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <Header siteTitle={data.site.siteMetadata.title} />
+          <div className={styles.body}>
+              <main>{children}</main>
+          </div>
+          <footer>
+              © {new Date().getFullYear()}, Built with
+              {` `}
+              <a href="https://www.gatsbyjs.org">Gatsby</a>
           </footer>
-    </div>
+      </div>
       
     
   )
@@ -50,3 +51,5 @@ Layout.propTypes = {
 }
 
 export default Layout
+
+

@@ -1,5 +1,5 @@
 import React from "react"
-
+import {Helmet} from "react-helmet";
 import HomePage from '../components/page-layouts/home-page/home-layout'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -11,6 +11,9 @@ const IndexPage = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap" rel="stylesheet" />
+      </Helmet>
       <SEO title="Home" />
       <HomePage />
       {/* <h1>Hi people</h1>
