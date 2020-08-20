@@ -7,16 +7,17 @@ import styles from './home-layout-styles.css'
 
 
 export default function HomePage() {
-    
-
     return (
         <div>
             <div>
                 <Hero />
             </div>
-            <div>
+           
+               <div>
                 <AboutPreview />
-            </div>
+            </div> 
+           
+            
             
         </div>
             

@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { TransitionProvider, TransitionViews } from "gatsby-plugin-transitions"
+
 import Header from "./header/header"
 import Sidebar from '../components/sidebar/sidebar'
 // import "./layout.css"
