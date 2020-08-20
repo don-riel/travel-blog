@@ -1,5 +1,5 @@
 .container {
-    margin: 1.5em 0;
+    margin: 1.5em 0 3em;
     width: 100%;
 }
 .about_container {
@@ -27,7 +27,7 @@
 }
 
 .about_Text_container h3 {
-    text-align: center;
+
     margin: 0;
 }
 .about_Text_container p {
@@ -38,15 +38,14 @@
 
 .about_title {
     display: flex;
+    flex-direction: column;
     margin-top: 1em;
 }
 
+
 .greeting {
     width: 25%;
-    display: flex;
-    padding-left: 1em;
-    justify-content: flex-start;
-
+    padding-left: 0.5em;
 }
 
 .greeting h3 {
@@ -54,14 +53,14 @@
 }
 
 .name {
-    display: flex;
-    align-items: flex-end;
+   text-align: center;
+   max-width: 350px;
 }
 
 .name h3 {
-    font-family: 'Mrs Saint Delafield', cursive, 'Mr De Haviland', cursive;
+    font-family: 'Mrs Saint Delafield', cursive;
     letter-spacing: 2px;
-    font-size: 60px;
+    font-size: 50px;
     color:  rgba(5, 87, 92, 0.8);
     height: 90px;
 }
@@ -69,7 +68,9 @@
 
 
 @media (min-width: 750px) {
-    
+    .container{
+        margin-bottom: 4.5em;
+    }
     .about_container {
         margin-top: 2em;
         height: 300px;
@@ -100,6 +101,10 @@
     .about_img {
         max-width: 250px;
         height: 240px;
+    }
+
+    .name h3 {
+        font-size: 60px;
     }
 
     

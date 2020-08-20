@@ -1,11 +1,13 @@
-.button_large {
+.button_large,
+.button_small {
 	display: flex;
 	justify-content: center;
 }
-.button_large_link {
+.button_large_link,
+.button_small_link {
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	border: 1px solid white;
+	border: 1px solid rgb(110, 108, 108);
 	display:inline-block;
 	cursor:pointer;
 	color:#e9ebee;
@@ -16,7 +18,8 @@
 	overflow: hidden;
 }
 
-.button_large_link:after {
+.button_large_link:after,
+.button_small_link:after {
 		content: '';
 		position: absolute;
 		bottom: 0;
@@ -26,7 +29,8 @@
 		background-color: rgba(5, 87, 92, 0.8);
 		z-index: -2;
 }
-.button_large_link:before {
+.button_large_link:before,
+.button_small_link:before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -38,11 +42,34 @@
 	z-index: -1;
 }
 
-.button_large_link:hover {
+.button_large_link:hover,
+.button_small_link:hover {
 	color: #fff;
 }
 
-.button_large_link:hover::before {
+.button_large_link:hover::before,
+.button_small_link:hover::before {
 	width: 100%;
 }
+
+
+/*Small button*/
+
+.button_small_link {
+	padding: 6px 40px;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

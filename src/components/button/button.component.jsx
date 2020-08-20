@@ -15,4 +15,18 @@ const LargeButton = ({children}) => {
     )
 }
 
+
+export const SmallButton = ({children}) => {
+    return (
+        <div className={styles.button_small}>
+            <Link to="/" 
+                className={styles.button_small_link} 
+            >
+                {children}
+            </Link>    
+        </div>
+    )
+}
+
+
 export default LargeButton;
