@@ -2,7 +2,7 @@ import React from 'react';
 import Img from 'gatsby-image';
 import { Link } from 'gatsby';
 
-const SidebarItemAbout= ({imgData,body, toLink}) => {
+const WidgetAbout= ({imgData,body, toLink}) => {
     return (
         <div>
             <Img fluid={imgData} className='image'/>
@@ -12,4 +12,4 @@ const SidebarItemAbout= ({imgData,body, toLink}) => {
     )
 }
 
-export default SidebarItemAbout;
+export default WidgetAbout;

@@ -12,6 +12,7 @@ const IndexPage = () => {
     <Layout>
       <Helmet>
         <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet"></link>
       </Helmet>
       <SEO title="Home" />
       <HomePage />

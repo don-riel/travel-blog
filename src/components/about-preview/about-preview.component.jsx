@@ -1,6 +1,6 @@
 import React from 'react';
+import Pulse from 'react-reveal/Pulse';
 import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
 import Img from 'gatsby-image';
 
 import AboutMeData from '../../queries/about-me-data';
@@ -14,38 +14,40 @@ const AboutPreview = () => {
     return (
 
                 <div className={styles.container} >
+                <Pulse>
                 <div className={styles.about_container}>
-                    <Zoom>
+                  
                         <div className={styles.about_Img_container}>
                         <Img fluid={data.placeholderImage.childImageSharp.fluid} alt='a photo of me' className={styles.about_img}/>
                         </div>
-                    </Zoom>
-                    
-                    <div className={styles.about_Text_container }>
-                        <Fade top>
+                  
+                   
+                        <div className={styles.about_Text_container }>
+                       
                             <section className={styles.about_title}>
                             <section className={styles.greeting} >
                                 <h3>Hi, I'm</h3>
                             </section>
-                            <section className={styles.name}>
-                                <h3>Karol</h3>
-                            </section>         
-                        </section>
-                        </Fade>
+                            
+                                <section className={styles.name}>
+                                <h3>Karol Anne
+                                </h3>
+                            </section> 
                         
-                        <Fade left>
+                                    
+                        </section>  
+                       
                             <p>I have always wanted to create a blog about food, travel and all my curious wonderings about our world. 
                             Now I finally got spare time and started writing with a goal to give others a taste of what goes on in my mind, 
                             and where I have wandered.
                             </p>
-                        </Fade>
-                        <Fade bottom>
-                            <LargeButton>Learn More</LargeButton>
-                        </Fade>
+                       
                         
+                            <LargeButton>Learn More</LargeButton>        
                     </div>
-
+                    
                 </div>
+                </Pulse>
             </div>
     )
 }

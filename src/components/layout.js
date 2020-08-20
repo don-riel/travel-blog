@@ -10,12 +10,13 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header/header"
-import Sidebar from '../components/sidebar/sidebar'
+
+
 // import "./layout.css"
 import  styles from "./global-styles.module.css"
 
 
-const Layout = ({location, children }) => {
+const Layout = ({children }) => {
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {

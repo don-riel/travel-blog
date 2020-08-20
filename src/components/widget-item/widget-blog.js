@@ -2,7 +2,7 @@ import React from 'react';
 import Img from 'gatsby-image';
 import { Link } from 'gatsby';
 
-const SidebarItemPost= ({title, imgData, body, toLink}) => {
+const WidgetBlog = ({title, imgData, body, toLink}) => {
     return (
         <div>
             <h3>{title}</h3>
@@ -13,4 +13,4 @@ const SidebarItemPost= ({title, imgData, body, toLink}) => {
     )
 }
 
-export default SidebarItemPost;
+export default WidgetBlog;
