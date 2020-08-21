@@ -1,6 +1,5 @@
 import React from 'react';
 import Pulse from 'react-reveal/Pulse';
-import Fade from 'react-reveal/Fade';
 import Img from 'gatsby-image';
 
 import AboutMeData from '../../queries/about-me-data';
@@ -43,7 +42,7 @@ const AboutPreview = () => {
                             </p>
                        
                         
-                            <LargeButton>Learn More</LargeButton>        
+                            <LargeButton link={'/about'}>Learn More</LargeButton>        
                     </div>
                     
                 </div>

@@ -3,10 +3,10 @@ import {Link} from 'gatsby';
 
 import styles from './button-styles.module.css'
 
-const LargeButton = ({children}) => {
+const LargeButton = ({children, link}) => {
     return (
         <div className={styles.button_large}>
-            <Link to="/" 
+            <Link to={link}
                 className={styles.button_large_link} 
             >
                 {children}

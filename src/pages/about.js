@@ -11,7 +11,7 @@ const About = () => {
     <Layout>
             <SEO title="About Me" />
             <AboutPage />
-            <Link to="/">Go back to the homepage</Link>
+            {/* <Link to="/">Go back to the homepage</Link> */}
     </Layout>
     )
 }

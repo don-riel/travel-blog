@@ -1,5 +1,4 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 
 import AboutMeData from '../../../queries/about-me-data'
@@ -12,19 +11,30 @@ export default function AboutPage() {
   
     return (
         <div>
-            <Img fluid={data.placeholderImage.childImageSharp.fluid} alt='a photo of me' className={styles.aboutImage} />
-            {
-                data.allMarkdownRemark.edges.map(({node}) => (
-                    <div key={node.id}>
-                        <h3>{node.frontmatter.title}</h3>
-                        <p>{node.frontmatter.p1}</p>
-                        <h3>{node.frontmatter.sub1} </h3>
-                        <p>{node.frontmatter.p2}</p>
-                        <h3>{node.frontmatter.sub2} </h3>
-                        <p>{node.frontmatter.p3}</p>
+            <div className={styles.img_box}>
+                <Img fluid={data.placeholderImage.childImageSharp.fluid} alt='a photo of me' className={styles.aboutImage} />
+            </div>
+
+            <div className={styles.middle}>
+                <div className={`${styles.content_box} ${styles.light}`}>
+                    <div className={styles.border_left}>
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+                        </p>
+                    </div>    
+                </div>
+
+                <div className={`${styles.content_box} ${styles.dark}`}>
+                    <div className={styles.border_right}>
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+                        </p>
                     </div>
-                ))
-            }
+                </div>
+            </div>
+            
             
             
         </div>
