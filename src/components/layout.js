@@ -36,7 +36,12 @@ const Layout = ({children }) => {
           <div className={styles.body}>
               <main>{children}</main>
           </div>
-      </div>
+          <footer>
+              © {new Date().getFullYear()}, Built with
+              {` `}
+              <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </footer>
+     </div>
       
     
   )
@@ -49,8 +54,3 @@ Layout.propTypes = {
 export default Layout
 
 
-// <footer>
-//               © {new Date().getFullYear()}, Built with
-//               {` `}
-//               <a href="https://www.gatsbyjs.org">Gatsby</a>
-//           </footer>

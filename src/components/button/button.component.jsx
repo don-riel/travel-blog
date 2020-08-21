@@ -16,7 +16,7 @@ const LargeButton = ({children}) => {
 }
 
 
-export const SmallButton = ({children}) => {
+export const WidgetButton = ({children}) => {
     return (
         <div className={styles.button_small}>
             <Link to="/" 
