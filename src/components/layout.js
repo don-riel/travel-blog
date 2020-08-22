@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import Fade from 'react-reveal/Fade';
 
 import Header from "./header/header"
 
@@ -36,11 +37,14 @@ const Layout = ({children }) => {
           <div className={styles.body}>
               <main>{children}</main>
           </div>
-          <footer>
-              © {new Date().getFullYear()}, Built with
-              {` `}
-              <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
+          <Fade bottom>
+            <footer>
+                © {new Date().getFullYear()}, Built with
+                {` `}
+                <a href="https://www.gatsbyjs.org">Gatsby</a>
+            </footer>
+          </Fade>
+          
      </div>
       
     

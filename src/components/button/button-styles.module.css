@@ -7,8 +7,7 @@
 .button_small_link {
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	border: 1px solid rgb(110, 108, 108);
-	display:inline-block;
+	/* border: 1px solid rgb(110, 108, 108); */
 	cursor:pointer;
 	color:#e9ebee;
 	font-size: 0.75rem;
