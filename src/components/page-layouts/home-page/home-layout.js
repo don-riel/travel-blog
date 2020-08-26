@@ -2,9 +2,8 @@ import React from 'react';
 
 import Hero from '../../hero/hero.component';
 import AboutPreview from '../../about-preview/about-preview.component';
-import Sidebar from '../../blog-widget/blog-widget'
+import BlogWidget from '../../blog-widget/blog-widget'
 
-import styles from './home-layout-styles.css'
 
 
 export default function HomePage() {
@@ -17,7 +16,7 @@ export default function HomePage() {
                 <AboutPreview />
             </div>
             <div>
-                <Sidebar />
+                <BlogWidget />
             </div>
             
             

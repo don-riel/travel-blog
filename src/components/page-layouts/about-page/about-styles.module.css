@@ -63,23 +63,23 @@
 }
 
 .border_left {
-    border-left: 2px solid rgb(71, 70, 70, 0.8);
+    border-left: 2px solid rgb(31, 30, 30);
     padding-left: 1em;
 }
 
 .border_right {
-    border-right: 2px solid rgb(71, 70, 70, 0.8);
+    border-right: 2px solid rgb(31, 30, 30);
     padding-right: 1em;
     text-align: right;
     color: #e9ebee;
 }
 
 .light {
-    background-color: rgb(16, 105, 105,0.1); 
+    background-color: rgb(112, 182, 182, 0.6); 
 }
 
 .dark {
-    background-color: rgba(5, 87, 92, 0.7); 
+    background-color: rgba(5, 87, 92, 0.9); 
     margin-left: auto;
 }
 

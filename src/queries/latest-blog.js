@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 const LatestBlogs = () => {
     const data = useStaticQuery(graphql`
     query {
-        allMarkdownRemark(filter: {frontmatter: {type: {eq: "blog_item"}}}, sort: {fields: frontmatter___date, order: ASC}, limit: 3) {
+        allMarkdownRemark(filter: {frontmatter: {type: {eq: "blog_item"}}}, sort: {fields: frontmatter___sort, order: DESC}, limit: 3) {
             edges {
             node {
                 id
@@ -12,6 +12,7 @@ const LatestBlogs = () => {
                 date
                 intro
                 place
+                sort
                 }
             }
             }

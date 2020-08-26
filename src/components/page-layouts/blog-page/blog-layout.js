@@ -1,28 +1,29 @@
 import React from 'react';
 
 import BlogPreview from '../../blog-item-preview/blog-item-preview'
-import BlogPreviewdata from '../../../queries/blog-preview-images'
+import BlogPreviewdata from '../../../queries/blog-preview-data'
 import getImgFluid from '../../../utils/imgFluid.utils';
 
+import styles from './blog-layout-styles.module.css'
 
 export default function BlogPage() {
     const data = BlogPreviewdata()
     
     return (
-        <div>
+        <div className={styles.layout}>
             {
                 data.allMarkdownRemark.edges.map(({node}) => {
              
                     let imgData = getImgFluid(data, node.frontmatter.place);
                     
                        return (
-                         <div key={node.id}>
+                         <div key={node.id} className={styles.preview_items}>
                             <BlogPreview 
                                 imgData={imgData}
                                 title={node.frontmatter.title}  
                                 body={node.frontmatter.intro}
                                 date={node.frontmatter.date}
-                                toLink="/"  
+                                toLink={`${'/'}${node.frontmatter.place}`} 
                             />
                           </div>
                        )
