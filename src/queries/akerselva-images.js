@@ -116,4 +116,6 @@ query {
     return data
 }
 
+
 export default AkerselvaImages;
+
