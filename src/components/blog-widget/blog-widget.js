@@ -3,7 +3,7 @@ import React from 'react'
 
 import WidgetBlog from '../widget-item/widget-blog';
 import LatestBlogs from '../../queries/latest-blog'
-import Fade from 'react-reveal/Fade';
+
 
 import getImgFluid from '../../utils/imgFluid.utils'
 import styles from './blog-widget-styles.module.css'
@@ -35,9 +35,7 @@ const BlogWidget = () => {
                                     toLink = {"/"}  
                                 />
                             </div>
-                
-                        
-                                   
+
                     )
                 })}
             </div> 

@@ -45,7 +45,7 @@ allMarkdownRemark(filter: {frontmatter: {type: {eq: "blog_item"}}}, sort: {field
         }
         }
     }
-    kongens_utsikt: file(relativePath: { eq: "blog/kongens-utsikt/img1.jpg" }) {
+    kongens_utsikt: file(relativePath: { eq: "blog/kongens-utsikt/img1.JPG" }) {
         childImageSharp {
         fluid {
             ...GatsbyImageSharpFluid

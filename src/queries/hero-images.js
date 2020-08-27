@@ -30,7 +30,7 @@ allMarkdownRemark(filter: {frontmatter: {type: {eq: "blog_item"}}}) {
         }
         }
     }
-    trolltunga2: file(relativePath: { eq: "blog/trolltunga/img21.jpg" }) {
+    trolltunga2: file(relativePath: { eq: "blog/trolltunga/img21.JPG" }) {
         childImageSharp {
         fluid {
             ...GatsbyImageSharpFluid

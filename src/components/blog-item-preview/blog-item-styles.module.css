@@ -85,24 +85,13 @@
 
 
 
-/* @media (min-width: 700px) {
+@media (min-width: 450px) {
     .blog {
-        display: flex;
-        margin-bottom: 2em;
-        height: 320px;
-    }
-
-    .blog_img,
-    .blog_content {
-        width: 50%;
-    }
-
-    .blog_content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        width: 400px;
+        height: 450px;
     }
 
     
-} */
+    
+}
 

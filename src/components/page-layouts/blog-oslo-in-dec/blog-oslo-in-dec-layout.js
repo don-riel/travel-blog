@@ -44,7 +44,7 @@ export default function Blog_Oslo_in_Dec() {
 
             <Fade bottom>
                 <div className={general_blog_styles.iframe_box}>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5LCZ4fWR4Zc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5LCZ4fWR4Zc" title="Oslo in December" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </Fade>
 

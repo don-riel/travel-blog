@@ -1,6 +1,5 @@
 import React from 'react';
 import Img from 'gatsby-image';
-import { Link } from 'gatsby';
 
 import {WidgetButton} from '../button/button.component'
 import styles from './widget-blog-styles.module.css'
