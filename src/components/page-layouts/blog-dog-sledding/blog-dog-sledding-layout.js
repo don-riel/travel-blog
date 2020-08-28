@@ -25,7 +25,7 @@ export default function Blog_DogSledding() {
 
             <Fade bottom>
                 <p>Tromsø lies in Northern Norway, 350 km from the Artic Circle and is composed of mountains, islands and fjords. 
-                    It is one of the best places to experience the Midnight Sun where the sun never sets, Polar Night where the sun is never visible, and the ever famous but unpredictable Aurora Borealis or Northern Lights. 
+                    {intro}
                     Well that was actually the main goal of this trip, and according to forecasts, February is one of the best times to witness the Aurora. To see the lights, weather should be perfect, I mean no rain and clouds. 
                     Unfortunately, the weather during our trip was, as they call the typical norwegian winter weather- cold, wet and dark.
                 </p>
