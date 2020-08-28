@@ -20,7 +20,7 @@ export default function Blog_Bergen() {
                 <p className={general_blog_styles.date}>{date}</p>
             </div>
             
-            <Fade bottom><Img fluid={images.img2.childImageSharp.fluid} className={general_blog_styles.image}/></Fade>
+            <Fade bottom><Img fluid={images.img2.childImageSharp.fluid} className={general_blog_styles.image} alt="image of four building with old architectures"/></Fade>
 
             <Fade bottom>
                 <p>{intro}</p>
@@ -70,23 +70,23 @@ export default function Blog_Bergen() {
                 <p>We took the last trip which was 11PM in Bergen and arrived in Oslo the next morning.</p>
             </Fade>
 
-            <Fade bottom><Img fluid={images.img3.childImageSharp.fluid} className={general_blog_styles.image}/></Fade>
+            <Fade bottom><Img fluid={images.img3.childImageSharp.fluid} className={general_blog_styles.image} alt="iamge of an open train station during winter"/></Fade>
             <Fade bottom>
                 <div className={general_blog_styles.img_caption}>
                     <p>Myrdal Station. This is the junction to the famous Flåmsbana railway.</p>
                 </div>
             </Fade>
 
-            <Fade bottom><Img fluid={images.img1.childImageSharp.fluid} className={general_blog_styles.image}/></Fade>
+            <Fade bottom><Img fluid={images.img1.childImageSharp.fluid} className={general_blog_styles.image} alt="image of old buildings with architectures"/></Fade>
             <Fade bottom>
                 <div className={general_blog_styles.img_caption}>
                     <p>Bryggen.</p>
                 </div>
             </Fade>
 
-            <Fade bottom><Img fluid={images.img4.childImageSharp.fluid} className={general_blog_styles.image}/></Fade>
-            <Fade bottom><Img fluid={images.img5.childImageSharp.fluid} className={general_blog_styles.image}/></Fade>
-            <Fade bottom><Img fluid={images.img6.childImageSharp.fluid} className={general_blog_styles.image}/></Fade>
+            <Fade bottom><Img fluid={images.img4.childImageSharp.fluid} className={general_blog_styles.image} alt="image of an old wooden alley way"/></Fade>
+            <Fade bottom><Img fluid={images.img5.childImageSharp.fluid} className={general_blog_styles.image} alt="image of karol with the harbor in the background"/></Fade>
+            <Fade bottom><Img fluid={images.img6.childImageSharp.fluid} className={general_blog_styles.image} alt="image of bergen seen at night"/></Fade>
 
 
             <div className={general_blog_styles.divider}></div>

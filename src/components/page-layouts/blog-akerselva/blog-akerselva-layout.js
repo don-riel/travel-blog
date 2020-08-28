@@ -123,19 +123,19 @@ export default function Blog_Akerselva() {
                 </ul>
             </Fade>
 
-            <Fade bottom><Img fluid={images.img2.childImageSharp.fluid} className={general_blog_styles.image}/></Fade>
+            <Fade bottom><Img fluid={images.img2.childImageSharp.fluid} className={general_blog_styles.image} alt="image of Nydalen station" /></Fade>
             <Fade bottom>
                 <div className={general_blog_styles.img_caption}>
                     <p>Nydalen Station</p>
                 </div>
             </Fade>
-            <Fade bottom><Img fluid={images.img3.childImageSharp.fluid} className={general_blog_styles.image} /></Fade>
+            <Fade bottom><Img fluid={images.img3.childImageSharp.fluid} className={general_blog_styles.image} alt="image of a google map" /></Fade>
             <Fade bottom>
                 <div className={general_blog_styles.img_caption}>
                     <p>We started the tour from Nydalen, but if you like a longer trail then you can start all the way up from Kjelsås. From Jernbanetorget take the no. 4 or 5 train or bus 37 to Nydalen.</p>
                 </div>
             </Fade>
-            <Fade bottom><Img fluid={images.img4.childImageSharp.fluid} className={general_blog_styles.image} /></Fade>
+            <Fade bottom><Img fluid={images.img4.childImageSharp.fluid} className={general_blog_styles.image} alt="image of a google map" /></Fade>
             <Fade bottom>
                 <div className={general_blog_styles.img_caption}>
                 <p>If you like a longer trail, then go all the way up to Kjelsås. Take the local train or bus 54 to Kjelsås.</p>
@@ -144,9 +144,9 @@ export default function Blog_Akerselva() {
             
             <div className={general_blog_styles.divider}></div>
             
-            <Fade bottom><Img fluid={images.img5.childImageSharp.fluid} className={general_blog_styles.image} /></Fade>
-            <Fade bottom><Img fluid={images.img6.childImageSharp.fluid} className={general_blog_styles.image} /></Fade>
-            <Fade bottom><Img fluid={images.img7.childImageSharp.fluid} className={general_blog_styles.image} /></Fade>
+            <Fade bottom><Img fluid={images.img5.childImageSharp.fluid} className={general_blog_styles.image} alt="image of a man walking along a river" /></Fade>
+            <Fade bottom><Img fluid={images.img6.childImageSharp.fluid} className={general_blog_styles.image} alt="image of a sunflower" /></Fade>
+            <Fade bottom><Img fluid={images.img7.childImageSharp.fluid} className={general_blog_styles.image} alt="image of Karol sitting on a river bank" /></Fade>
             
             <div className={general_blog_styles.divider}></div>
             
@@ -155,26 +155,26 @@ export default function Blog_Akerselva() {
                 <div className={general_blog_styles.img_caption}>
                     <p >If you feel tired, take a rest, lie in the grass and enjoy the freshness of the surroundings.</p>
                 </div></Fade>
-            <Fade bottom><Img fluid={images.img9.childImageSharp.fluid} className={general_blog_styles.image} /></Fade>
-            <Fade bottom><Img fluid={images.img10.childImageSharp.fluid} className={general_blog_styles.image} /></Fade>
+            <Fade bottom><Img fluid={images.img9.childImageSharp.fluid} className={general_blog_styles.image} alt="image of a yellow house with grasses in front" /></Fade>
+            <Fade bottom><Img fluid={images.img10.childImageSharp.fluid} className={general_blog_styles.image} alt="image of small house in front of a samll waterfall" /></Fade>
             <Fade bottom>
                 <div className={general_blog_styles.img_caption}>
                     <p >Hønse-Lovisas house and Mølle waterfall.</p>
                 </div>
             </Fade>
-            <Fade bottom><Img fluid={images.img11.childImageSharp.fluid} className={general_blog_styles.image} /></Fade>
-            <Fade bottom><Img fluid={images.img12.childImageSharp.fluid} className={general_blog_styles.image} /></Fade>
+            <Fade bottom><Img fluid={images.img11.childImageSharp.fluid} className={general_blog_styles.image} alt="image of a small waterfall" /></Fade>
+            <Fade bottom><Img fluid={images.img12.childImageSharp.fluid} className={general_blog_styles.image} alt="image of a river with a building at the side" /></Fade>
             
             <div className={general_blog_styles.divider}></div>
             
-            <Fade bottom><Img fluid={images.img13.childImageSharp.fluid} className={general_blog_styles.image} /></Fade>
-            <Fade bottom><Img fluid={images.img14.childImageSharp.fluid} className={general_blog_styles.image} /></Fade>
+            <Fade bottom><Img fluid={images.img13.childImageSharp.fluid} className={general_blog_styles.image} alt="image of a passing way under a bridge"/></Fade>
+            <Fade bottom><Img fluid={images.img14.childImageSharp.fluid} className={general_blog_styles.image} alt="image of an old bridge"/></Fade>
             <Fade bottom>
                 <div className={general_blog_styles.img_caption}>
                     <p >Aamodt Bridge.</p>
                 </div>
             </Fade>
-            <Fade bottom><Img fluid={images.img15.childImageSharp.fluid} className={general_blog_styles.image} /></Fade>
+            <Fade bottom><Img fluid={images.img15.childImageSharp.fluid} className={general_blog_styles.image} alt="image of a sign on a bridge with norwegian text" /></Fade>
             <Fade bottom>
                 <div className={general_blog_styles.img_caption}>
                     <p >"100 men I can bear, but fail during rhythmic march."</p>

@@ -73,7 +73,7 @@ const LatestBlogs = () => {
         }
         }
     }
-    dog_sledding: file(relativePath: { eq: "blog/dog-sledding/img1.jpg" }) {
+    dog_sledding: file(relativePath: { eq: "blog/dog-sledding/img1.JPG" }) {
         childImageSharp {
         fluid {
             ...GatsbyImageSharpFluid
