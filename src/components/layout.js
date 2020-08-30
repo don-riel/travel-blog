@@ -20,7 +20,7 @@ import  styles from "./global-styles.module.css"
 
 
 const Layout = ({children }) => {
-  const arrow = TopArrow();
+
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {

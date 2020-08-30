@@ -1,6 +1,6 @@
 import React from 'react';
 import Img from 'gatsby-image';
-import {Link} from 'gatsby';
+
 
 import SocialMedia from '../../queries/social-media-images'
 import styles from './footer-styles.module.css'
@@ -28,23 +28,17 @@ const Footer = () => {
             <p>Follow me</p>
 
             <div className={styles.social_icons}>
-              <Link 
-                to="https://www.youtube.com/channel/UCYxJshfIpMfvvc7psztDWiw/featured"
-              >
-                <Img fluid={images.youtube.childImageSharp.fluid} alt="email icon" className={styles.social_media_img}/>
-              </Link>
-
-              <Link 
-                to="https://www.facebook.com/karolanne.ramoran"
-              >
-                <Img fluid={images.facebook.childImageSharp.fluid} alt="email icon" className={styles.social_media_img}/>
-              </Link>
-
-              <Link 
-                to="https://www.instagram.com/imannakarolina/"
-              >
-                <Img fluid={images.instagram.childImageSharp.fluid} alt="email icon" className={styles.social_media_img}/>
-              </Link>
+            <a href="https://www.youtube.com/channel/UCYxJshfIpMfvvc7psztDWiw/featured"><Img fluid={images.youtube.childImageSharp.fluid} alt="email icon" className={styles.social_media_img}/>
+            </a>
+            <a href="https://www.facebook.com/karolanne.ramoran">
+             <Img fluid={images.facebook.childImageSharp.fluid} alt="email icon" className={styles.social_media_img}/>
+            </a>
+            
+            <a href="https://www.instagram.com/imannakarolina/">                <Img fluid={images.instagram.childImageSharp.fluid} alt="email icon" className={styles.social_media_img}/>
+            </a>
+            
+               
+            
 
             </div>
         </div>
