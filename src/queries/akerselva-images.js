@@ -17,7 +17,7 @@ query {
         }
         }
     }
-    img3: file(relativePath: { eq: "blog/asdasd/img3.JPG" }) {
+    img3: file(relativePath: { eq: "blog/akerselva/img3.JPG" }) {
         childImageSharp {
         fluid {
             ...GatsbyImageSharpFluid
