@@ -1,5 +1,4 @@
 import React from 'react';
-
 import BlogPreview from '../../blog-item-preview/blog-item-preview'
 import BlogPreviewdata from '../../../queries/blog-preview-data'
 import getImgFluid from '../../../utils/imgFluid.utils';
@@ -7,7 +6,7 @@ import getImgFluid from '../../../utils/imgFluid.utils';
 import styles from './blog-layout-styles.module.css'
 
 export default function BlogPage() {
-    const data = BlogPreviewdata()
+    const data = BlogPreviewdata();
     
     return (
         <div className={styles.layout}>
@@ -31,6 +30,7 @@ export default function BlogPage() {
                 )
             }
         </div>
+
     )
 }
 

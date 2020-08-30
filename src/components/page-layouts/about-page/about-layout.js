@@ -20,9 +20,11 @@ export default function AboutPage() {
                 <Fade left>
                     <div className={`${styles.content_box} ${styles.light}`}>
                         <div className={styles.border_left}>
-                            <h3>Lorem Ipsum</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+                            <h3>About Me</h3>
+                            <p>I am a fulltime engineer working in Oslo, Norway, and writing this blog is one of my hobbies.
+                            ​   <br />
+                                <br />
+                            I´m from Ilocos Norte, Philippines, and moved to Norway in autumn of 2015. 
                             </p>
                         </div>    
                     </div>
@@ -31,9 +33,13 @@ export default function AboutPage() {
                 <Fade right>
                     <div className={`${styles.content_box} ${styles.dark}`}>
                         <div className={styles.border_right}>
-                            <h3>Lorem Ipsum</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+                            
+                            <p>I have always wanted to create a blog about food, travel and all my curious wonderings about our world. 
+                            <br />
+                            <br />
+                             Now I finally got spare time and started writing with a goal to give others a taste of what goes on in my mind, 
+                            and where I have wandered.
+                            Take some time to explore the blog, read something interesting, and feel free to reach out if you have questions.
                             </p>
                         </div>
                     </div>

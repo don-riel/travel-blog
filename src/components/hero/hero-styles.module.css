@@ -1,7 +1,8 @@
 .container_full {
     width: 100%;
-    background-color: rgb(16, 105, 105,0.1);
-    padding: 0 0.5em 2em 0.5em;
+    /* background-color: rgb(16, 105, 105,0.1); */
+    /* padding: 0 0.5em 2em 0.5em; */
+    margin-top: 1em;
 }
 
 .hero_container {
@@ -57,7 +58,7 @@
 } */
 .shadow_left,
 .shadow_right {
-    background-color: rgba(211, 151, 136, 0.6);
+    background-color: rgba(177, 140, 109, 0.6);
 }
 .shadow_left {
     height: 100%;

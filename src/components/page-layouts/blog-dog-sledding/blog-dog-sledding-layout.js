@@ -72,14 +72,14 @@ export default function Blog_DogSledding() {
             <Fade bottom>
                 <p>
                 Very thankful to our family and friends in Tromsø for the warm welcome and accommodation. 
-                You made Pik´s birthday memorable. Vi er veldig takknemlig og glad i dere! ❤️
+                You made Pik´s birthday memorable. Vi er veldig takknemlig og glad i dere! <span role="img" aria-aria-label>❤️</span>
                 </p>
             </Fade>
 
             
             <Fade bottom>
                 <div className={general_blog_styles.iframe_box}>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IQz-DnDm-Qc" title="Dog Sledding and Reindeer Visit in Tromsø" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IQz-DnDm-Qc" title="Dog Sledding and Reindeer Visit in Tromsø" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
             </Fade>
             <div className={general_blog_styles.divider}></div>

@@ -21,9 +21,9 @@
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px;
     border: 1px solid white;
-    -webkit-box-shadow: 22px -8px 5px 0px  rgba(5, 87, 92, 0.3);
-    -moz-box-shadow: 22px -8px 5px 0px  rgba(5, 87, 92, 0.3);
-    box-shadow: 22px -8px 5px 0px  rgba(5, 87, 92, 0.3);
+    -webkit-box-shadow: 22px -8px 5px 0px  rgba(5, 87, 92, 0.1);
+    -moz-box-shadow: 22px -8px 5px 0px  rgba(5, 87, 92, 0.1);
+    box-shadow: 22px -8px 5px 0px  rgba(5, 87, 92, 0.1);
 }
 
 .about_Text_container h3 {

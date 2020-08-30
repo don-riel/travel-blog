@@ -20,8 +20,8 @@ body {
 main {
     width: 100%;
     margin-bottom: 2em;
+    position: relative;
 }
-
 
 
 h2 {
@@ -30,7 +30,7 @@ h2 {
 }
 
 h3 {
-    color: #6e6c6c;
+    /* color: #6e6c6c; */
     font-weight: 400;
     font-size: 1.25rem;
     margin: 1em 0;
@@ -53,11 +53,27 @@ header {
     margin: 0;
 }
 
+.scroll_style {
+    font-size: 1.25rem;
+    color: #302f2f;
+    background-color: rgba(230, 148, 26, 0.1);
+    padding: 0.5em 0.7em;
+    border-radius: 172px 172px 172px 172px;
+    -moz-border-radius: 172px 172px 172px 172px;
+    -webkit-border-radius: 172px 172px 172px 172px;
+    border: 0px solid #000000;
+    transition: padding 0.25s;
+    z-index: 99999;
+}
+
+.scroll_style:hover {
+    background-color: rgba(153, 98, 36, 0.5);
+    padding: 0.6em 0.8em;
+}
+
 /* footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+    background-color: green;
+    height: 150px;
 } */
 
 .shadow {

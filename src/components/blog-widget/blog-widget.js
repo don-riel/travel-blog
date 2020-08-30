@@ -10,7 +10,6 @@ import styles from './blog-widget-styles.module.css'
 
 const BlogWidget = () => {
     const sidebar_item_data = LatestBlogs();
-    console.log(window.location.href)
     return (
 
         <div className={styles.widget}>
@@ -25,6 +24,7 @@ const BlogWidget = () => {
                 
                 {sidebar_item_data.allMarkdownRemark.edges.map(({node}) => {
                     let imgData = getImgFluid(sidebar_item_data, node.frontmatter.place)
+                    console.log(node.frontmatter.place)
                     return (
                        
                             <div key={node.id} className={styles.widget_item}>
@@ -32,7 +32,7 @@ const BlogWidget = () => {
                                     title={node.frontmatter.title}
                                     imgData = {imgData}
                                     body = {node.frontmatter.intro}
-                                    toLink = {"/"}  
+                                    toLink={`${'/'}${node.frontmatter.place}`}
                                 />
                             </div>
 

@@ -56,7 +56,7 @@ export default function Blog_Rampestreken() {
 
             <Fade bottom>
                 <div className={general_blog_styles.iframe_box}>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9ihP5RunO10" title="Rampestreken" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9ihP5RunO10" title="Rampestreken" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>                </div>
             </Fade>
 
             <Fade bottom><Img fluid={images.img2.childImageSharp.fluid} className={general_blog_styles.image} alt="image of a town surrounded by a lake and mountains seen from the top of a mountain"/></Fade>

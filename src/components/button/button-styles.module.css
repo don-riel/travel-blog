@@ -9,7 +9,7 @@
 	letter-spacing: 2px;
 	/* border: 1px solid rgb(110, 108, 108); */
 	cursor:pointer;
-	color:#e9ebee;
+	color:#d8dde4;
 	font-size: 0.75rem;
 	padding: 9px 60px;
 	text-decoration:none;
@@ -26,7 +26,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(211, 151, 136);
+		background-color: rgb(150, 115, 90);
 		z-index: -2;
 }
 .button_large_link:before,
@@ -37,7 +37,7 @@
 	left: 0;
 	width: 0%;
 	height: 100%;
-	background-color:rgba(238, 180, 165, 0.9);
+	background-color:rgba(224, 198, 176, 0.6);
 	transition: all .3s;
 	z-index: -1;
 }

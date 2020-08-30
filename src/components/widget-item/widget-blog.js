@@ -13,7 +13,7 @@ const WidgetBlog = ({title, imgData, body, toLink}) => {
                 </div>
                 <h3>{title}</h3>
                 <p className={styles.overflow}>{body}</p>
-                <WidgetButton to={toLink} className={styles.link}>Read</WidgetButton>
+                <WidgetButton link={toLink} className={styles.link}>Read</WidgetButton>
             </div>
      
         

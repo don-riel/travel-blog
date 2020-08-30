@@ -16,10 +16,10 @@ const LargeButton = ({children, link}) => {
 }
 
 
-export const WidgetButton = ({children}) => {
+export const WidgetButton = ({children, link}) => {
     return (
         <div className={styles.button_small}>
-            <Link to="/" 
+            <Link to={link} 
                 className={styles.button_small_link} 
             >
                 {children}

@@ -82,7 +82,7 @@ export default function Blog_WesternNorway() {
 
             <Fade bottom>
                 <div className={general_blog_styles.iframe_box}>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9ihP5RunO10" title="Møre og Romsdal Roadtrip Day 1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9ihP5RunO10" title="Møre og Romsdal Roadtrip Day 1" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>            
                 </div>
             </Fade>
 
@@ -153,7 +153,7 @@ export default function Blog_WesternNorway() {
 
             <Fade bottom>
                 <div className={general_blog_styles.iframe_box}>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lnylOUouSUY" title="Geiranger - Trollstigen Roadtrip 2018" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lnylOUouSUY" title="Geiranger - Trollstigen Roadtrip 2018" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
             </Fade>
 
@@ -285,7 +285,7 @@ export default function Blog_WesternNorway() {
 
             <Fade bottom>
                 <div className={general_blog_styles.iframe_box}>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zZl7LiJtYPA" title="Møre og Romsdal Roadtrip Day 2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zZl7LiJtYPA" title="Møre og Romsdal Roadtrip Day 2" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
             </Fade>
 

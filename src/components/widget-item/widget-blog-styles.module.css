@@ -1,11 +1,10 @@
 .widget_container {
     box-sizing: border-box;
     padding: 1.5em;
-    margin-bottom: 40px;
-   
+    margin-bottom: 40px;  
     display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-evenly;
 
 }
 
@@ -13,16 +12,12 @@
     margin-bottom: 1em;
 }
 
-
-
 .widget_container h3 {
     margin: 0 0 0.5em 0;
     font-size: 0.9rem;
     text-transform: uppercase;
 
 }
-
-
 
 .overflow {
     font-size: 0.75rem;
@@ -54,7 +49,7 @@
         font-size: 0.7rem;
     }
 
-    p {
+    .widget_container p {
         font-size: 0.7rem;
     }
 

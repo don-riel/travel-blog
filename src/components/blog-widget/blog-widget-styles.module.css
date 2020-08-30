@@ -69,16 +69,16 @@
   background-color: rgb(16, 105, 105,0.1);  
 }
 
-.widget_item:nth-child(even) {
+/* .widget_item:nth-child(even) {
   background-color: rgba(5, 87, 92, 0.7);
-}
+} */
 
 
 
 
 .widget_item:nth-child(even) h3,
 .widget_item:nth-child(even) p {
-  color: #d8dde4;
+  color: #302f2f;
 }
 
 
