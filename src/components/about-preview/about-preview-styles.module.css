@@ -50,6 +50,7 @@
 
 .greeting h3 {
     font-size: 1.2rem;
+    color: #302f2f;
 }
 
 .name {
@@ -103,9 +104,7 @@
         height: 240px;
     }
 
-    .name h3 {
-        font-size: 60px;
-    }
+
 
     
 
