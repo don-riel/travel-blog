@@ -69,7 +69,9 @@ export default function Blog_Telemark() {
 
             <Fade bottom>
                 <p>
-                Here is the link to the AirBnb: <a href="https://www.airbnb.com/rooms/20165711?source_impression_id=p3_1564047600_62nabOYPa6ymG2qR">https://www.airbnb.com/rooms/20165711?source_impression_id=p3_1564047600_62nabOYPa6ymG2qR</a>
+                Here is the link to the AirBnb: <a href="https://www.airbnb.com/rooms/20165711?source_impression_id=p3_1564047600_62nabOYPa6ymG2qR">
+                    https://www.airbnb.com/rooms
+                </a>
                 </p>
             </Fade>
 

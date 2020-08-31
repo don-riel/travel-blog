@@ -8,3 +8,11 @@
     align-items: center;
     justify-content: space-evenly;
 }
+.nav_link:hover {
+    color: rgb(150, 115, 90);
+}
+
+.active {
+    color: rgb(150, 115, 90);
+    border-bottom: 1.5px solid rgba(177, 140, 109, 0.6);
+}

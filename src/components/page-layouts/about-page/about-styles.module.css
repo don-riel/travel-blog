@@ -52,6 +52,7 @@
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
+    padding: 0.5em;
 }
 .content_box {
     /* padding: 0.5em 1em 2em; */
@@ -76,19 +77,11 @@
     color: #e9ebee;
 }
 
-/* .light {
-    background-color: rgb(112, 182, 182, 0.6); 
-} */
-
 .dark {
-    /* background-color: rgba(5, 87, 92, 0.9);  */
+
     margin-left: auto;
 }
 
-/* .border_right h3,
-.border_right p {
-    color: #e9ebee;
-} */
 
 .border_right h3,
 .border_left h3 {
@@ -98,6 +91,7 @@
 
 
 @media (min-width: 590px) {
+    
     .aboutImage::after {
         margin-left: -33%;
     }
@@ -113,4 +107,6 @@
     .aboutImage::after {
         margin-left: -23%;
     }
+    
 }
+

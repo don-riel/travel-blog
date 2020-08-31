@@ -100,7 +100,6 @@ iframe {
 
 .img_flex > div {
     width: 100%;
-    max-width: 250px;
     margin: 5px;
     margin-bottom: 5px;
 }
@@ -121,5 +120,11 @@ iframe {
 
     .iframe_box {
         height: 350px;
+    }
+}
+
+@media (min-width: 980px) {
+    .img_flex > div {
+        max-width: 300px;
     }
 }

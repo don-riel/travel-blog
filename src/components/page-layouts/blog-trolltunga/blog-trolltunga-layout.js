@@ -52,7 +52,7 @@ export default function Blog_Trolltunga() {
             </Fade>
 
             <Fade bottom>
-                <p>You can book your parking here. <a href="https://www.trolltunganorway.com/en_GB/parking">https://www.trolltunganorway.com/en_GB/parking.</a> 
+                <p>You can book your parking here. <a href="https://www.trolltunganorway.com/en_GB/parking">www.trolltunganorway.com.</a> 
                 </p>
             </Fade>
 

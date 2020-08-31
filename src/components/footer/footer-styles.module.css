@@ -55,6 +55,10 @@
     padding-left: 10px;
 }
 
+.copyright p {
+    font-size: 0.7rem;
+}
+
 @media (min-width: 750px) {
     .footer {
         flex-direction: row;
@@ -76,4 +80,11 @@
     }
 
 
+}
+
+@media (min-width: 1000px) {
+    .footer {
+        padding-right: 6em;
+        padding-left: 6em;
+    }
 }
