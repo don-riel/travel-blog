@@ -9,13 +9,12 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import ScrollToTop from 'react-scroll-up'
-// import Fade from 'react-reveal/Fade';
+
 
 import Header from "./header/header"
-import TopArrow from "../queries/topArrow"
 import Footer from './footer/footer.component'
 
-// import "./layout.css"
+
 import  styles from "./global-styles.module.css"
 
 

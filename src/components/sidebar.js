@@ -7,16 +7,12 @@
 
 import React from "react"
 import { Link } from 'gatsby';
-import Img from 'gatsby-image';
-import ScrollToTop from 'react-scroll-up'
-// import Fade from 'react-reveal/Fade';
 
-import Header from "./header/header"
 import WidgetBlog from '../components/widget-item/widget-blog'
 import LatestBlogs from '../queries/latest-blog'
 import getImgFluid from '../utils/imgFluid.utils'
 
-// import "./Sidebar.css"
+
 import  styles from "./sidebar-styles.module.css"
 
 
