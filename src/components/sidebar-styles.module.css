@@ -42,25 +42,14 @@ aside h4 {
     padding: 1em;
 }
 
-.link_to_blogPage {
+/* .link_to_blogPage {
     color: #BF7331;
 }
 
-/* .widget_item:nth-child(even) {
-    background-color: rgb(16, 105, 105,0.1);  
-  }
-  
-  .widget_item:nth-child(odd) {
-    background-color: rgba(5, 87, 92, 0.7);
-  }
-  
-  
-  
-  
-  .widget_item:nth-child(odd) h3,
-  .widget_item:nth-child(odd) p {
-    color: #d8dde4;
-  } */
+.link_to_blogPage:hover {
+    color: rgb(150, 115, 90);
+} */
+
 @media (min-width: 750px) {
 
     .blog_body main {width: 67%;}

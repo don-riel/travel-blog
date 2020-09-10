@@ -11,7 +11,7 @@ import Blog_Kongens_Utsikt from '../components/page-layouts/blog-kongens-utsikt/
 const Blog = () => {
     return (
     <Layout>
-            <SEO title="About Me" />
+            <SEO title="Kongens's Utsikt" />
             <Sidebar>
                 <Blog_Kongens_Utsikt />
             </Sidebar>

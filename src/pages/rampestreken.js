@@ -11,7 +11,7 @@ import Blog_Rampestreken from '../components/page-layouts/blog-rampestreken/blog
 const Blog = () => {
     return (
     <Layout>
-            <SEO title="About Me" />
+            <SEO title="Rampestreken" />
             <Sidebar>
                 <Blog_Rampestreken />
             </Sidebar>

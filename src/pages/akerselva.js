@@ -10,7 +10,7 @@ import Blog_Akerselva from '../components/page-layouts/blog-akerselva/blog-akers
 const Blog = () => {
     return (
     <Layout>
-            <SEO title="About Me" />
+            <SEO title="Akerselva" />
             <Sidebar>
                 <Blog_Akerselva />
             </Sidebar>

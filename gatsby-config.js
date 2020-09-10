@@ -36,7 +36,7 @@ module.exports = {
           `Montserrat\:400,500,700` // you can also specify font weights and styles
         ],
         display: 'swap',
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/about-page/about-me.JPG`, // This path is relative to the root of the site.
       },
     },
   

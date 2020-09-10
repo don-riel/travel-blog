@@ -11,7 +11,7 @@ import Blog_Trolltunga from '../components/page-layouts/blog-trolltunga/blog-tro
 const Blog = () => {
     return (
     <Layout>
-            <SEO title="About Me" />
+            <SEO title="Trolltunga Hike" />
             <Sidebar>
                 <Blog_Trolltunga />
             </Sidebar>

@@ -10,7 +10,7 @@ import Blog_Bergen from '../components/page-layouts/blog-bergen/blog-bergen-layo
 const Blog = () => {
     return (
     <Layout>
-            <SEO title="About Me" />
+            <SEO title="Bergen by Train" />
             <Sidebar>
                 <Blog_Bergen />
             </Sidebar>

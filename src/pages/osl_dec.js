@@ -11,7 +11,7 @@ import Blog_Oslo_in_Dec from '../components/page-layouts/blog-oslo-in-dec/blog-o
 const Blog = () => {
     return (
     <Layout>
-            <SEO title="About Me" />
+            <SEO title="Oslo in December" />
             <Sidebar>
                 <Blog_Oslo_in_Dec />
             </Sidebar>

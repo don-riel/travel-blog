@@ -6,7 +6,7 @@
  */
 
 import React from "react"
-import { Link } from 'gatsby';
+
 
 import WidgetBlog from '../components/widget-item/widget-blog'
 import LatestBlogs from '../queries/latest-blog'
@@ -43,9 +43,7 @@ const Sidebar = ({children }) => {
                 })}
               </aside>
           </div>
-          <div className={styles.link}>
-            <Link to="/blog" className={styles.link_to_blogPage}>Read More Blogs</Link>
-          </div>
+         
            
      </div>
       
@@ -57,3 +55,6 @@ const Sidebar = ({children }) => {
 export default Sidebar
 
 
+// <div className={styles.link}>
+// <Link to="/blog" className={styles.link_to_blogPage} activeClassName= {styles.active}>Read More Blogs</Link>
+// </div>

@@ -11,7 +11,7 @@ import Blog_Telemark from '../components/page-layouts/blog-telemark/blog-telemar
 const Blog = () => {
     return (
     <Layout>
-            <SEO title="About Me" />
+            <SEO title="Telemark" />
             <Sidebar>
                 <Blog_Telemark />
             </Sidebar>

@@ -105,7 +105,11 @@ iframe {
 }
 
 .small_img {
-    min-height: 187px;
+    min-height: 225px;
+}
+
+.blog_content_container a:hover {
+    color: rgb(150, 115, 90);
 }
 
 @media (min-width: 750px) {

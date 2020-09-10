@@ -10,7 +10,7 @@ import Blog_Autumn_Oslo from '../components/page-layouts/blog-autumn-oslo/autumn
 const Blog = () => {
     return (
     <Layout>
-            <SEO title="About Me" />
+            <SEO title="Autumn in Oslo" />
             <Sidebar>
                 <Blog_Autumn_Oslo />
             </Sidebar>

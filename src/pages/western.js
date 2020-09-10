@@ -11,7 +11,7 @@ import Blog_WesternNorway from '../components/page-layouts/blog-western-noway/bl
 const Blog = () => {
     return (
     <Layout>
-            <SEO title="About Me" />
+            <SEO title="Roadtrip to Western Norway" />
             <Sidebar>
                 <Blog_WesternNorway />
             </Sidebar>

@@ -11,7 +11,7 @@ import Blog_EndOfTheWorld from '../components/page-layouts/blog-endOfTheWorld/bl
 const Blog = () => {
     return (
     <Layout>
-            <SEO title="About Me" />
+            <SEO title="End of the World" />
             <Sidebar>
                 <Blog_EndOfTheWorld />
             </Sidebar>

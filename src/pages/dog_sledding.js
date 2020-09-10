@@ -11,7 +11,7 @@ import Blog_DogSledding from '../components/page-layouts/blog-dog-sledding/blog-
 const Blog = () => {
     return (
     <Layout>
-            <SEO title="About Me" />
+            <SEO title="Dog sledding in Tromsø" />
             <Sidebar>
                 <Blog_DogSledding />
             </Sidebar>
