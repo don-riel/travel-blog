@@ -8,6 +8,7 @@ const LargeButton = ({children, link}) => {
         <div className={styles.button_large}>
             <Link to={link}
                 className={styles.button_large_link} 
+                activeClassName= {styles.active}
             >
                 {children}
             </Link>    

@@ -21,8 +21,7 @@ const Nav = () => {
             </Link> 
             <Link to="/blog/" 
                 className = {styles.nav_link}
-                activeClassName= {styles.active}
-               
+                activeClassName= {styles.active}   
             >   Blogs
             </Link> 
         </div>

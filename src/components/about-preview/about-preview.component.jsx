@@ -6,6 +6,7 @@ import AboutMeData from '../../queries/about-me-data';
 import LargeButton from '../button/button.component';
 
 import styles from './about-preview-styles.module.css';
+import { Link } from 'gatsby';
 
 const AboutPreview = () => {
     const data = AboutMeData();
@@ -41,8 +42,11 @@ const AboutPreview = () => {
                             and where I have wandered.
                             </p>
                        
-                        
-                            <LargeButton link={'/about'}>Learn More</LargeButton>        
+                            <Link to="/about/" 
+                                className = {styles.btn_about}
+                                activeClassName= {styles.active}
+                            >Learn More</Link>
+                                
                     </div>
                     
                 </div>
