@@ -6,7 +6,7 @@ const getBlogExcerpt = (place) => {
     let intro = null;
     let date = null;
     
-    data.allMarkdownRemark.edges.map(({node}) => {
+    data.allMarkdownRemark.edges.forEach(({node}) => {
         if(node.frontmatter.place === place) {
             title = node.frontmatter.title;
             intro = node.frontmatter.intro;

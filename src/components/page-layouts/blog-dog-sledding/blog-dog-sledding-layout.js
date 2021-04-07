@@ -72,7 +72,7 @@ export default function Blog_DogSledding() {
             <Fade bottom>
                 <p>
                 Very thankful to our family and friends in Tromsø for the warm welcome and accommodation. 
-                You made Pik´s birthday memorable. Vi er veldig takknemlig og glad i dere! <span role="img" aria-label>❤️</span>
+                You made Pik´s birthday memorable. Vi er veldig takknemlig og glad i dere! <span role="img" aria-label="">❤️</span>
                 </p>
             </Fade>
 

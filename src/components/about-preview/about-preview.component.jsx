@@ -3,7 +3,6 @@ import Pulse from 'react-reveal/Pulse';
 import Img from 'gatsby-image';
 
 import AboutMeData from '../../queries/about-me-data';
-import LargeButton from '../button/button.component';
 
 import styles from './about-preview-styles.module.css';
 import { Link } from 'gatsby';

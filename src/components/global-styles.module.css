@@ -1,89 +1,83 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-    font-size: 16px;
-   
-}
-body {
-    font-family: 'Montserrat', sans-serif;
-    color: #1d1c1c;
-    line-height: 1.6;
-    letter-spacing: 1.5px;
-    background-color: #ebeef3;
+  font-size: 16px;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #1d1c1c;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+  background-color: #ebeef3;
+  position: relative;
+  padding-bottom: 8em;
+}
 
 main {
-    width: 100%;
-    margin-bottom: 2em;
-    position: relative;
+  width: 100%;
+  margin-bottom: 2em;
+  position: relative;
 }
 
-
 h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 h3 {
-    /* color: #6e6c6c; */
-    font-weight: 400;
-    font-size: 1.25rem;
-    margin: 1em 0;
-  }
+  /* color: #6e6c6c; */
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin: 1em 0;
+}
 
 p {
-    font-size: 0.9rem;
-    letter-spacing: 1.2px;
-    color: #302f2f;
-    font-weight: 300;
+  font-size: 0.9rem;
+  letter-spacing: 1.2px;
+  color: #302f2f;
+  font-weight: 300;
 }
 
 a {
-    color: #6e6c6c;
-    text-decoration: none;
+  color: #6e6c6c;
+  text-decoration: none;
 }
 header {
-    box-sizing: initial;
-    width: 100%;
-    margin: 0;
+  box-sizing: initial;
+  width: 100%;
+  margin: 0;
 }
 
 .scroll_style {
-    font-size: 1.25rem;
-    color: #302f2f;
-    background-color: rgba(153, 98, 36, 0.5);
-    padding: 0.5em 0.7em;
-    border-radius: 172px 172px 172px 172px;
-    -moz-border-radius: 172px 172px 172px 172px;
-    -webkit-border-radius: 172px 172px 172px 172px;
-    border: 0px solid #000000;
-    transition: padding 0.25s;
-    z-index: 99999;
+  font-size: 1.25rem;
+  color: #302f2f;
+  background-color: rgba(153, 98, 36, 0.5);
+  padding: 0.5em 0.7em;
+  border-radius: 172px 172px 172px 172px;
+  -moz-border-radius: 172px 172px 172px 172px;
+  -webkit-border-radius: 172px 172px 172px 172px;
+  border: 0px solid #000000;
+  transition: padding 0.25s;
+  z-index: 99999;
 }
 
 .scroll_style:hover {
-    background-color: rgba(230, 148, 26, 0.1);
-    transform: scale(1.1);
-    border: 1px solid rgba(153, 98, 36, 0.5);
+  background-color: rgba(230, 148, 26, 0.1);
+  transform: scale(1.1);
+  border: 1px solid rgba(153, 98, 36, 0.5);
 }
-
 
 .shadow {
-    background-color: rgba(5, 87, 92, 0.3);
+  background-color: rgba(5, 87, 92, 0.3);
 }
-
 
 @media (min-width: 750px) {
-    html {
-        font-size: 18px;
-    }
+  html {
+    font-size: 18px;
+  }
 }
-
-
-
-
