@@ -1,97 +1,87 @@
 .blog {
-    width: 300px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid rgb(124, 120, 120, 0.5);
-    position: relative;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgb(124, 120, 120, 0.5);
+  position: relative;
 }
 
 .blog::after {
-    content: "Read";
-    color: #e9ebee;
-    font-size: 1.2rem;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(30, 139, 145, 0.9);
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: all 0.5s;
+  content: "Read";
+  color: #e9ebee;
+  font-size: 1.2rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 139, 145, 0.9);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.5s;
 }
 
 .blog:hover::after {
-    opacity: 1;
+  opacity: 1;
 }
 
 .blog_header {
-    font-size: 1.25rem;
-    font-weight: 400;
-    background-color: rgb(150, 115, 90, 0.9);
-    /* border: 1px solid #e9ebee60; */
-    width: 80%;
-    margin: 0 auto 0.5em;
-    padding: 0.3em 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+  background-color: rgb(150, 115, 90, 0.9);
+  /* border: 1px solid #e9ebee60; */
+  width: 80%;
+  margin: 0 auto 0.5em;
+  padding: 0.3em 0;
 }
 
 .blog_title,
 .date {
-    color: black; 
+  color: black;
 }
 
-
 .blog_title {
-    font-weight: 400;
-    font-size: 0.8rem;
+  font-weight: 400;
+  font-size: 0.8rem;
 }
 
 .date {
-    font-size: 0.6rem;
+  font-size: 0.6rem;
 }
 
-
-
 .link {
-    font-size: 0.75rem;
+  font-size: 0.75rem;
 }
 
 .blog_item {
-    margin: 2em 0;
+  margin: 2em 0;
 }
 
 .blog_img {
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
 }
 
 .blog_content {
-    padding: 0.5em;
-    /* border: 1px solid rgb(218, 215, 215);  */
-    width: 100%;
-    margin-bottom: 1em;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    top: auto;
+  padding: 0.5em;
+  /* border: 1px solid rgb(218, 215, 215);  */
+  width: 100%;
+  margin-bottom: 1em;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  top: auto;
 }
-
-
-
 
 @media (min-width: 450px) {
-    .blog {
-        width: 400px;
-        height: 450px;
-    }
-
-    
-    
+  .blog {
+    width: 400px;
+    height: 450px;
+  }
 }
-

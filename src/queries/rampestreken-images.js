@@ -1,32 +1,25 @@
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from "gatsby"
 
 const RampestrekenImages = () => {
-    const data = useStaticQuery(graphql`
-query {
-    img1: file(relativePath: { eq: "blog/rampestreken/img1.JPG" }) {
+  const data = useStaticQuery(graphql`
+    query {
+      img1: file(relativePath: { eq: "blog/rampestreken/img1.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    img2: file(relativePath: { eq: "blog/rampestreken/img2.JPG" }) {
+      }
+      img2: file(relativePath: { eq: "blog/rampestreken/img2.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
+      }
     }
-    
-    
-    
+  `)
+  return data
 }
 
-`
-    )
-    return data
-}
-
-
-export default RampestrekenImages;
-
+export default RampestrekenImages

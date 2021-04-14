@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 import Fade from "react-reveal/Fade"
 
 import AboutMeData from "../../../queries/about-me-data"
-import BlogWidget from "../../blog-widget/blog-widget";
+import BlogWidget from "../../blog-widget/blog-widget"
 
 import styles from "./about-styles.module.css"
 

@@ -1,23 +1,20 @@
-import React from 'react';
+import React from "react"
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
-import Sidebar from '../components/sidebar'
-import Blog_Autumn_Oslo from '../components/page-layouts/blog-autumn-oslo/autumn-oslo-layout'
-
+import Sidebar from "../components/sidebar"
+import Blog_Autumn_Oslo from "../components/page-layouts/blog-autumn-oslo/autumn-oslo-layout"
 
 const Blog = () => {
-    return (
+  return (
     <Layout>
-            <SEO title="Autumn in Oslo" />
-            <Sidebar>
-                <Blog_Autumn_Oslo />
-            </Sidebar>
-            
-
+      <SEO title="Autumn in Oslo" />
+      <Sidebar>
+        <Blog_Autumn_Oslo />
+      </Sidebar>
     </Layout>
-    )
+  )
 }
 
-export default Blog;
+export default Blog

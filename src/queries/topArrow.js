@@ -1,22 +1,18 @@
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from "gatsby"
 
 const TopArrow = () => {
-    const data = useStaticQuery(graphql`
-query {
-    topArrow: file(relativePath: { eq: "top-arrow.png" }) {
+  const data = useStaticQuery(graphql`
+    query {
+      topArrow: file(relativePath: { eq: "top-arrow.png" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
+      }
     }
-    
+  `)
+  return data
 }
 
-`
-    )
-    return data
-}
-
-export default TopArrow;
-
+export default TopArrow

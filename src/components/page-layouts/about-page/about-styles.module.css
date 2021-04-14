@@ -1,116 +1,108 @@
 .aboutContainer {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .img_box {
-    width: 100%;
-    height: 300px;
-    /* background-color:rgb(16, 105, 105,0.1); */
-    position: relative;
-    margin: 2em 0;
+  width: 100%;
+  height: 300px;
+  /* background-color:rgb(16, 105, 105,0.1); */
+  position: relative;
+  margin: 2em 0;
 }
 .aboutImage {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    height: 100%;
-    margin-bottom: 2em;
-    position: relative;
-    opacity: 1;
-    z-index: -1;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 100%;
+  margin-bottom: 2em;
+  position: relative;
+  opacity: 1;
+  z-index: -1;
 }
 
 .aboutImage::before {
-    content: "";
-    position: absolute;
-    top: 0;
-	left: 0;
-	width: 100%;
-    height: 100%;
-    z-index: 1;
-	/* background-color:rgb(16, 105, 105,0.1); */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /* background-color:rgb(16, 105, 105,0.1); */
 }
 
 .aboutImage::after {
-    content: "Karol Anne";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    letter-spacing: 0.2em;
-    top: 60%;
-    left: 50%;
-    margin-left: -37%;
-    font-size: 1.2rem;
-    color: #e9ebee;
-    width: 70%;
-    max-width: 400px;
-    height: 15%;
-    position: absolute;
-    z-index: 2;
-    background-color:rgba(5, 87, 92, 0.8);
-    border: 1px solid rgb(71, 70, 70, 0.3);
+  content: "Karol Anne";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  letter-spacing: 0.2em;
+  top: 60%;
+  left: 50%;
+  margin-left: -37%;
+  font-size: 1.2rem;
+  color: #e9ebee;
+  width: 70%;
+  max-width: 400px;
+  height: 15%;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(5, 87, 92, 0.8);
+  border: 1px solid rgb(71, 70, 70, 0.3);
 }
 
 .middle {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0.5em;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0.5em;
 }
 .content_box {
-    /* padding: 0.5em 1em 2em; */
-    max-width: 700px;
-    margin: 2.5em 0;
+  /* padding: 0.5em 1em 2em; */
+  max-width: 700px;
+  margin: 2.5em 0;
 }
 
 .content_box p {
-    font-size: 0.8rem;
-    
+  font-size: 0.8rem;
 }
 
 .border_left {
-    border-left: 2px solid rgb(150, 115, 90);
-    padding-left: 1em;
+  border-left: 2px solid rgb(150, 115, 90);
+  padding-left: 1em;
 }
 
 .border_right {
-    border-right: 2px solid rgb(150, 115, 90);
-    padding-right: 1em;
-    text-align: right;
-    color: #e9ebee;
+  border-right: 2px solid rgb(150, 115, 90);
+  padding-right: 1em;
+  text-align: right;
+  color: #e9ebee;
 }
 
 .dark {
-
-    margin-left: auto;
+  margin-left: auto;
 }
-
 
 .border_right h3,
 .border_left h3 {
-    color: rgb(141, 86, 47);
+  color: rgb(141, 86, 47);
 }
 
-
-
 @media (min-width: 590px) {
-    
-    .aboutImage::after {
-        margin-left: -33%;
-    }
+  .aboutImage::after {
+    margin-left: -33%;
+  }
 }
 
 @media (min-width: 660px) {
-    .aboutImage::after {
-        margin-left: -32%;
-    }
+  .aboutImage::after {
+    margin-left: -32%;
+  }
 }
 
 @media (min-width: 750px) {
-    .aboutImage::after {
-        margin-left: -23%;
-    }
-    
+  .aboutImage::after {
+    margin-left: -23%;
+  }
 }
-

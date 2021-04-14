@@ -16,6 +16,7 @@ body {
   background-color: #ebeef3;
   position: relative;
   padding-bottom: 8em;
+  z-index: -2;
 }
 
 main {
@@ -57,13 +58,13 @@ header {
   font-size: 1.25rem;
   color: #302f2f;
   background-color: rgba(153, 98, 36, 0.5);
-  padding: 0.5em 0.7em;
+  padding: 0.7em;
   border-radius: 172px 172px 172px 172px;
   -moz-border-radius: 172px 172px 172px 172px;
   -webkit-border-radius: 172px 172px 172px 172px;
   border: 0px solid #000000;
   transition: padding 0.25s;
-  z-index: 99999;
+  z-index: 99;
 }
 
 .scroll_style:hover {

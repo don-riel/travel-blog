@@ -1,52 +1,46 @@
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from "gatsby"
 
 const DogSleddingImages = () => {
-    const data = useStaticQuery(graphql`
-query {
-    img1: file(relativePath: { eq: "blog/dog-sledding/img1.JPG" }) {
+  const data = useStaticQuery(graphql`
+    query {
+      img1: file(relativePath: { eq: "blog/dog-sledding/img1.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    img2: file(relativePath: { eq: "blog/dog-sledding/img2.JPG" }) {
+      }
+      img2: file(relativePath: { eq: "blog/dog-sledding/img2.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    img3: file(relativePath: { eq: "blog/dog-sledding/img3.JPG" }) {
+      }
+      img3: file(relativePath: { eq: "blog/dog-sledding/img3.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    img4: file(relativePath: { eq: "blog/dog-sledding/img4.JPG" }) {
+      }
+      img4: file(relativePath: { eq: "blog/dog-sledding/img4.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    img5: file(relativePath: { eq: "blog/dog-sledding/img5.JPG" }) {
+      }
+      img5: file(relativePath: { eq: "blog/dog-sledding/img5.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
+      }
     }
-    
-    
+  `)
+  return data
 }
 
-`
-    )
-    return data
-}
-
-
-export default DogSleddingImages;
-
+export default DogSleddingImages

@@ -1,19 +1,17 @@
-import React from 'react';
+import React from "react"
 
-
-import Layout from '../components/layout'
-import AboutPage from '../components/page-layouts/about-page/about-layout'
-import SEO from '../components/seo'
-
+import Layout from "../components/layout"
+import AboutPage from "../components/page-layouts/about-page/about-layout"
+import SEO from "../components/seo"
 
 const About = () => {
-    return (
+  return (
     <Layout>
-            <SEO title="About Me" />
-            <AboutPage />
-            {/* <Link to="/">Go back to the homepage</Link> */}
+      <SEO title="About Me" />
+      <AboutPage />
+      {/* <Link to="/">Go back to the homepage</Link> */}
     </Layout>
-    )
+  )
 }
 
-export default About;
+export default About

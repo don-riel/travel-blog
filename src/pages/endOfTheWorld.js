@@ -1,24 +1,20 @@
-import React from 'react';
+import React from "react"
 
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-
-import Sidebar from '../components/sidebar'
-import Blog_EndOfTheWorld from '../components/page-layouts/blog-endOfTheWorld/blog-endOfTheWorld-layout'
-
+import Sidebar from "../components/sidebar"
+import Blog_EndOfTheWorld from "../components/page-layouts/blog-endOfTheWorld/blog-endOfTheWorld-layout"
 
 const Blog = () => {
-    return (
+  return (
     <Layout>
-            <SEO title="End of the World" />
-            <Sidebar>
-                <Blog_EndOfTheWorld />
-            </Sidebar>
-            
-
+      <SEO title="End of the World" />
+      <Sidebar>
+        <Blog_EndOfTheWorld />
+      </Sidebar>
     </Layout>
-    )
+  )
 }
 
-export default Blog;
+export default Blog

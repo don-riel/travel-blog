@@ -1,26 +1,26 @@
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from "gatsby"
 
-const BlogExceprt= () => {
-    const data = useStaticQuery(graphql`
+const BlogExceprt = () => {
+  const data = useStaticQuery(graphql`
     query MyQuery {
-        allMarkdownRemark(filter: {frontmatter: {type: {eq: "blog_item"}}}) {
-          edges {
-            node {
-              id
-              frontmatter {
-                title
-                place
-                intro
-                date
-              }
+      allMarkdownRemark(
+        filter: { frontmatter: { type: { eq: "blog_item" } } }
+      ) {
+        edges {
+          node {
+            id
+            frontmatter {
+              title
+              place
+              intro
+              date
             }
           }
         }
       }
-
-`
-    )
-    return data
+    }
+  `)
+  return data
 }
 
-export default BlogExceprt;
+export default BlogExceprt

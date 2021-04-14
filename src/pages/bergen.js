@@ -1,23 +1,20 @@
-import React from 'react';
+import React from "react"
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
-import Sidebar from '../components/sidebar'
-import Blog_Bergen from '../components/page-layouts/blog-bergen/blog-bergen-layout'
-
+import Sidebar from "../components/sidebar"
+import Blog_Bergen from "../components/page-layouts/blog-bergen/blog-bergen-layout"
 
 const Blog = () => {
-    return (
+  return (
     <Layout>
-            <SEO title="Bergen by Train" />
-            <Sidebar>
-                <Blog_Bergen />
-            </Sidebar>
-            
-
+      <SEO title="Bergen by Train" />
+      <Sidebar>
+        <Blog_Bergen />
+      </Sidebar>
     </Layout>
-    )
+  )
 }
 
-export default Blog;
+export default Blog

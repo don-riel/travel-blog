@@ -8,24 +8,19 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import ScrollToTop from 'react-scroll-up'
-
+import ScrollToTop from "react-scroll-up"
 
 import Header from "./header/header"
-import Footer from './footer/footer.component'
+import Footer from "./footer/footer.component"
 
+import styles from "./global-styles.module.css"
 
-import  styles from "./global-styles.module.css"
-
-
-const Layout = ({children }) => {
-
-
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
-          title,
+          title
           author
         }
       }
@@ -33,28 +28,21 @@ const Layout = ({children }) => {
   `)
 
   const scroll_style = {
-    color: 'black',
-    transitionDuration: '0.5s',
-
+    color: "black",
+    transitionDuration: "0.5s",
   }
 
   return (
-    
     <div>
-        <Header siteTitle={data.site.siteMetadata.title} />
-          <div className={styles.body}>
-              <main>{children}</main>
-              <ScrollToTop showUnder={160} style={scroll_style} >
-               <span className={styles.scroll_style}>&#8679;</span>
-              </ScrollToTop>
-          </div>
-         <Footer />
-               
-        
-          
-     </div>
-      
-    
+      <Header siteTitle={data.site.siteMetadata.title} />
+      <div className={styles.body}>
+        <main>{children}</main>
+        <ScrollToTop showUnder={160} style={scroll_style}>
+          <span className={styles.scroll_style}>&#8679;</span>
+        </ScrollToTop>
+      </div>
+      <Footer />
+    </div>
   )
 }
 
@@ -63,5 +51,3 @@ Layout.propTypes = {
 }
 
 export default Layout
-
-

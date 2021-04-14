@@ -1,121 +1,116 @@
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from "gatsby"
 
 const AkerselvaImages = () => {
-    const data = useStaticQuery(graphql`
-query {
-    img1: file(relativePath: { eq: "blog/akerselva/img1.JPG" }) {
+  const data = useStaticQuery(graphql`
+    query {
+      img1: file(relativePath: { eq: "blog/akerselva/img1.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    img2: file(relativePath: { eq: "blog/akerselva/img2.JPG" }) {
+      }
+      img2: file(relativePath: { eq: "blog/akerselva/img2.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    img3: file(relativePath: { eq: "blog/akerselva/img3.JPG" }) {
+      }
+      img3: file(relativePath: { eq: "blog/akerselva/img3.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    img4: file(relativePath: { eq: "blog/akerselva/img4.JPG" }) {
+      }
+      img4: file(relativePath: { eq: "blog/akerselva/img4.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    img5: file(relativePath: { eq: "blog/akerselva/img5.JPG" }) {
+      }
+      img5: file(relativePath: { eq: "blog/akerselva/img5.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    img6: file(relativePath: { eq: "blog/akerselva/img6.JPG" }) {
+      }
+      img6: file(relativePath: { eq: "blog/akerselva/img6.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    img7: file(relativePath: { eq: "blog/akerselva/img7.JPG" }) {
+      }
+      img7: file(relativePath: { eq: "blog/akerselva/img7.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    img8: file(relativePath: { eq: "blog/akerselva/img8.JPG" }) {
+      }
+      img8: file(relativePath: { eq: "blog/akerselva/img8.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    img9: file(relativePath: { eq: "blog/akerselva/img9.JPG" }) {
+      }
+      img9: file(relativePath: { eq: "blog/akerselva/img9.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    img10: file(relativePath: { eq: "blog/akerselva/img10.JPG" }) {
+      }
+      img10: file(relativePath: { eq: "blog/akerselva/img10.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    img11: file(relativePath: { eq: "blog/akerselva/img11.JPG" }) {
+      }
+      img11: file(relativePath: { eq: "blog/akerselva/img11.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    img12: file(relativePath: { eq: "blog/akerselva/img12.JPG" }) {
+      }
+      img12: file(relativePath: { eq: "blog/akerselva/img12.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    img13: file(relativePath: { eq: "blog/akerselva/img13.JPG" }) {
+      }
+      img13: file(relativePath: { eq: "blog/akerselva/img13.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    img14: file(relativePath: { eq: "blog/akerselva/img14.JPG" }) {
+      }
+      img14: file(relativePath: { eq: "blog/akerselva/img14.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    img15: file(relativePath: { eq: "blog/akerselva/img15.JPG" }) {
+      }
+      img15: file(relativePath: { eq: "blog/akerselva/img15.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
+      }
     }
-    
+  `)
+  return data
 }
 
-`
-    )
-    return data
-}
-
-
-export default AkerselvaImages;
-
+export default AkerselvaImages

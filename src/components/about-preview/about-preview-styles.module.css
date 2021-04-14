@@ -1,150 +1,135 @@
 .container {
-    margin: 1.5em 0 3em;
-    width: 100%;
+  margin: 1.5em 0 3em;
+  width: 100%;
 }
 .about_container {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .about_Img_container {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .about_img {
-    width: 180px;
-    margin: 0 auto;
-    height: 180px;
-    border-radius: 200px 200px 200px 200px;
-    -moz-border-radius: 200px 200px 200px 200px;
-    -webkit-border-radius: 200px 200px 200px 200px;
-    border: 1px solid white;
-    -webkit-box-shadow: 22px -8px 5px 0px  rgba(5, 87, 92, 0.1);
-    -moz-box-shadow: 22px -8px 5px 0px  rgba(5, 87, 92, 0.1);
-    box-shadow: 22px -8px 5px 0px  rgba(5, 87, 92, 0.1);
+  width: 180px;
+  margin: 0 auto;
+  height: 180px;
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 1px solid white;
+  -webkit-box-shadow: 22px -8px 5px 0px rgba(5, 87, 92, 0.1);
+  -moz-box-shadow: 22px -8px 5px 0px rgba(5, 87, 92, 0.1);
+  box-shadow: 22px -8px 5px 0px rgba(5, 87, 92, 0.1);
 }
 
 .about_Text_container h3 {
-
-    margin: 0;
+  margin: 0;
 }
 .about_Text_container p {
-    font-size: 0.8rem;
-    padding: 0 1em;
-    margin: 0 0 2.5em;
+  font-size: 0.8rem;
+  padding: 0 1em;
+  margin: 0 0 2.5em;
 }
 
 .about_title {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
 }
 
-
 .greeting {
-    width: 25%;
-    padding-left: 0.5em;
+  width: 25%;
+  padding-left: 0.5em;
 }
 
 .greeting h3 {
-    font-size: 1.2rem;
-    color: #302f2f;
+  font-size: 1.2rem;
+  color: #302f2f;
 }
 
 .name {
-   text-align: center;
-   max-width: 350px;
+  text-align: center;
+  max-width: 350px;
 }
 
 .name h3 {
-    font-family: 'Mrs Saint Delafield', cursive;
-    letter-spacing: 2px;
-    font-size: 50px;
-    color:  rgba(5, 87, 92, 0.8);
-    height: 90px;
+  font-family: "Mrs Saint Delafield", cursive;
+  letter-spacing: 2px;
+  font-size: 50px;
+  color: rgba(5, 87, 92, 0.8);
+  height: 90px;
 }
 
 .btn_about {
-    text-transform: uppercase;   
-	letter-spacing: 2px;
-	cursor:pointer;
-	font-size: 1rem;
-    color: rgb(150, 115, 90);
-    transition: color 0.5s;   
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: rgb(150, 115, 90);
+  transition: color 0.5s;
 }
 
 .btn_about::after {
-    content: "";
-    display: block;
-    width: 15%; 
-    border-bottom: 1px solid #302f2f;
-    transition: width 1s; 
+  content: "";
+  display: block;
+  width: 15%;
+  border-bottom: 1px solid #302f2f;
+  transition: width 1s;
 }
 
 .btn_about:hover::after {
-    width: 30%;
+  width: 30%;
 }
 
 .btn_about:hover,
 .btn_about:focus {
-    color: #302f2f;
+  color: #302f2f;
 }
-
-
 
 @media (min-width: 750px) {
-    .container{
-        margin-bottom: 4.5em;
-    }
-    .about_container {
-        margin-top: 2em;
-        height: 300px;
-        display: flex;
+  .container {
+    margin-bottom: 4.5em;
+  }
+  .about_container {
+    margin-top: 2em;
+    height: 300px;
+    display: flex;
+  }
+  .about_container div {
+    flex: 1;
+  }
 
-    }
-    .about_container div {
-        flex: 1;
-    }
+  .about_container div:nth-of-type(1) {
+    order: 2;
+  }
+  .about_container div:nth-of-type(2) {
+    order: 1;
+  }
 
-    .about_container div:nth-of-type(1) {
-        order: 2;
-    }
-    .about_container div:nth-of-type(2) {
-        order: 1;
-    }
+  .about_Img_container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .about_Text_container {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .about_Img_container {
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
-    .about_Text_container {
-       display: flex;
-        flex-direction: column;
-    }
+  .about_img {
+    max-width: 250px;
+    height: 240px;
+  }
 
-    .about_img {
-        max-width: 250px;
-        height: 240px;
-    }
+  .btn_about {
+    text-align: center;
+  }
 
-    .btn_about {
-        text-align: center;
-    }
-
-    .btn_about::after {
-        margin: 0 auto;
-    }
-
-
-
-    
-
-    
-
+  .btn_about::after {
+    margin: 0 auto;
+  }
 }
-
-
-

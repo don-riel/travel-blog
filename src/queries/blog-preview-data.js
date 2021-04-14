@@ -1,104 +1,107 @@
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from "gatsby"
 
 const BlogPreviewData = () => {
-    const data = useStaticQuery(graphql`
-query {
-allMarkdownRemark(filter: {frontmatter: {type: {eq: "blog_item"}}}, sort: {fields: frontmatter___sort, order: DESC}) {
-    edges {
-        node {
-        id
-        frontmatter {
-            title
-            place
-            intro
-            date
-            sort
+  const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark(
+        filter: { frontmatter: { type: { eq: "blog_item" } } }
+        sort: { fields: frontmatter___sort, order: DESC }
+      ) {
+        edges {
+          node {
+            id
+            frontmatter {
+              title
+              place
+              intro
+              date
+              sort
+            }
+          }
         }
-        }
-    }
-    }
-    telemark: file(relativePath: { eq: "blog/telemark/img1.JPG" }) {
+      }
+      telemark: file(relativePath: { eq: "blog/telemark/img1.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    endOfTheWorld: file(relativePath: { eq: "blog/endOfTheWorld/img1.JPG" }) {
+      }
+      endOfTheWorld: file(relativePath: { eq: "blog/endOfTheWorld/img1.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    western: file(relativePath: { eq: "blog/western-norway/img1.jpg" }) {
+      }
+      western: file(relativePath: { eq: "blog/western-norway/img1.jpg" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    trolltunga: file(relativePath: { eq: "blog/trolltunga/img1.JPG" }) {
+      }
+      trolltunga: file(relativePath: { eq: "blog/trolltunga/img1.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    kongens_utsikt: file(relativePath: { eq: "blog/kongens-utsikt/img1.JPG" }) {
+      }
+      kongens_utsikt: file(
+        relativePath: { eq: "blog/kongens-utsikt/img1.JPG" }
+      ) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    rampestreken: file(relativePath: { eq: "blog/rampestreken/img1.JPG" }) {
+      }
+      rampestreken: file(relativePath: { eq: "blog/rampestreken/img1.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    akerselva: file(relativePath: { eq: "blog/akerselva/img1.JPG" }) {
+      }
+      akerselva: file(relativePath: { eq: "blog/akerselva/img1.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    autumn: file(relativePath: { eq: "blog/autumn-in-osl/img1.JPG" }) {
+      }
+      autumn: file(relativePath: { eq: "blog/autumn-in-osl/img1.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    dog_sledding: file(relativePath: { eq: "blog/dog-sledding/img1.JPG" }) {
+      }
+      dog_sledding: file(relativePath: { eq: "blog/dog-sledding/img1.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    osl_dec: file(relativePath: { eq: "blog/osl-in-dec/img1.JPG" }) {
+      }
+      osl_dec: file(relativePath: { eq: "blog/osl-in-dec/img1.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
-    }
-    bergen: file(relativePath: { eq: "blog/bergen/img1.JPG" }) {
+      }
+      bergen: file(relativePath: { eq: "blog/bergen/img1.JPG" }) {
         childImageSharp {
-        fluid {
+          fluid {
             ...GatsbyImageSharpFluid
+          }
         }
-        }
+      }
     }
+  `)
+  return data
 }
 
-`
-    )
-    return data
-}
-
-export default BlogPreviewData;
+export default BlogPreviewData
