@@ -8,14 +8,15 @@
 }
 
 .widget_container:hover {
-  border: 1px solid rgba(116, 116, 115, 0.3);
+  outline: 1px solid rgba(116, 116, 115, 0.3);
 }
 
 .widget_container:hover .img_box {
-  transform: scale(1.1);
+  transform: scale(1.1, 1.1);
 }
 
 .img_box {
+  width: 100%;
   margin-bottom: 1em;
   transition: all 1s;
 }

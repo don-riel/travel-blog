@@ -18,7 +18,7 @@ const Footer = () => {
             alt="email icon"
             className={styles.social_media_img}
           />
-          <p className={styles.email_text}>karolramoran@gmail.com</p>
+          <p className={styles.email_text}>karolannebramoran@gmail.com</p>
         </div>
       </div>
 
