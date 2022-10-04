@@ -1,6 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
-import Fade from "react-reveal/Fade"
+// import Fade from "react-reveal/Fade"
 
 import AboutMeData from "../../../queries/about-me-data"
 import BlogWidget from "../../blog-widget/blog-widget"
@@ -21,7 +21,6 @@ export default function AboutPage() {
       </div>
 
       <div className={styles.middle}>
-        <Fade left>
           <div className={`${styles.content_box} ${styles.light}`}>
             <div className={styles.border_left}>
               <h3>About Me</h3>
@@ -34,9 +33,7 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
-        </Fade>
 
-        <Fade right>
           <div className={`${styles.content_box} ${styles.dark}`}>
             <div className={styles.border_right}>
               <p>
@@ -51,7 +48,6 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
-        </Fade>
       </div>
       <div>
         <BlogWidget />

@@ -12,7 +12,6 @@ const AboutPreview = () => {
 
   return (
     <div className={styles.container}>
-      <Pulse>
         <div className={styles.about_container}>
           <div className={styles.about_Img_container}>
             <Img
@@ -49,7 +48,6 @@ const AboutPreview = () => {
             </Link>
           </div>
         </div>
-      </Pulse>
     </div>
   )
 }

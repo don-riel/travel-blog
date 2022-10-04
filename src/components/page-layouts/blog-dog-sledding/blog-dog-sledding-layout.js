@@ -19,22 +19,17 @@ export default function Blog_DogSledding() {
         <p className={general_blog_styles.date}>{date}</p>
       </div>
 
-      <Fade bottom>
         <Img
           fluid={images.img2.childImageSharp.fluid}
           className={general_blog_styles.image}
           alt="image of two reindeers with huge horns"
         />
-      </Fade>
-      <Fade bottom>
         <Img
           fluid={images.img1.childImageSharp.fluid}
           className={general_blog_styles.image}
           alt="image of a snow sled being pulled by a number of dogs"
         />
-      </Fade>
 
-      <Fade bottom>
         <p>
           Tromsø lies in Northern Norway, 350 km from the Artic Circle and is
           composed of mountains, islands and fjords.
@@ -45,18 +40,14 @@ export default function Blog_DogSledding() {
           Unfortunately, the weather during our trip was, as they call the
           typical norwegian winter weather- cold, wet and dark.
         </p>
-      </Fade>
 
-      <Fade bottom>
         <p>
           Days before the trip, weather forecast says weather in the weekend
           won´t be great. There were warnings of strong winds, avalanche,
           landslides and rain, but as the Norwegian saying says, `DET ER INGEN
           DÅRLIG VÆR, BARE DÅRLIG KLÆR!’
         </p>
-      </Fade>
 
-      <Fade bottom>
         <p>
           We arrived in Tromsø on a Thursday evening and weather was still fine
           by then. The view from the plane was so spectacular, you can see
@@ -64,18 +55,14 @@ export default function Blog_DogSledding() {
           announce to take a look at the window to see the Aurora, but sadly, it
           did not happen.
         </p>
-      </Fade>
 
-      <Fade bottom>
         <p>
           So plan B it is. We woke up to a windy Friday and walked 10 minutes to
           Fjellheisen Cable car. but sadly they had to close because of strong
           winds. Yes, another bad news. We then decided to leave and head to
           town.
         </p>
-      </Fade>
 
-      <Fade bottom>
         <p>
           I prebooked a husky sledding tour and I was worried it would be
           cancelled because of the weather, but luckily not. They said that as
@@ -88,17 +75,13 @@ export default function Blog_DogSledding() {
           even made it even more exciting---the only downfall is that I couldn´t
           use my camera.
         </p>
-      </Fade>
 
-      <Fade bottom>
         <p>
           During our last day we visited reindeer farm pastured by Samis. Sami
           people are indigenous folk in Norway and distinguished by their
           beautiful and colourful costumes.
         </p>
-      </Fade>
 
-      <Fade bottom>
         <p>
           Very thankful to our family and friends in Tromsø for the warm welcome
           and accommodation. You made Pik´s birthday memorable. Vi er veldig
@@ -107,9 +90,7 @@ export default function Blog_DogSledding() {
             ❤️
           </span>
         </p>
-      </Fade>
 
-      <Fade bottom>
         <div className={general_blog_styles.iframe_box}>
           <iframe
             width="560"
@@ -121,31 +102,24 @@ export default function Blog_DogSledding() {
             allowFullScreen
           ></iframe>
         </div>
-      </Fade>
       <div className={general_blog_styles.divider}></div>
       {/* ============================================================= */}
 
-      <Fade bottom>
         <Img
           fluid={images.img3.childImageSharp.fluid}
           className={general_blog_styles.image}
           alt="image of a modern cathedral"
         />
-      </Fade>
-      <Fade bottom>
         <Img
           fluid={images.img4.childImageSharp.fluid}
           className={general_blog_styles.image}
           alt="image of buildings covered in snow"
         />
-      </Fade>
-      <Fade bottom>
         <Img
           fluid={images.img5.childImageSharp.fluid}
           className={general_blog_styles.image}
           alt="image of karol in a harbor"
         />
-      </Fade>
 
       <div className={general_blog_styles.divider}></div>
       {/* ============================================================= */}

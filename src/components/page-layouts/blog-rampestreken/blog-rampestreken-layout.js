@@ -19,23 +19,18 @@ export default function Blog_Rampestreken() {
         <p className={general_blog_styles.date}>{date}</p>
       </div>
 
-      <Fade bottom>
         <Img
           fluid={images.img1.childImageSharp.fluid}
           className={general_blog_styles.image}
           alt="image of karol on a rampwalk on top of a mountain"
         />
-      </Fade>
 
-      <Fade bottom>
         <p>
           {intro} There were actually lots of breaks but we did not took
           pictures along the way and just enjoyed the views and chilled in the
           car.
         </p>
-      </Fade>
 
-      <Fade bottom>
         <p>
           Gigantic mountains, crystal clear rivers, streams and waterfalls,
           colourful cabins and houses entertained us along the way. It was so
@@ -48,9 +43,7 @@ export default function Blog_Rampestreken() {
           apartment itself was cozy, spacious and relaxing, plus the host was so
           helpful. He lived in a bobil or RV just in front of the house.
         </p>
-      </Fade>
 
-      <Fade bottom>
         <p>
           We took our lunch in the senter with our packed lunch, rested for a
           while and drove 10 minutes to the starting point of our hike,
@@ -60,21 +53,15 @@ export default function Blog_Rampestreken() {
           people of age can hike it. In fact we met kids and oldies along the
           hike.
         </p>
-      </Fade>
 
-      <Fade bottom>
         <p>
           After the hike, we drove back to the Gjerdsetbygda and took advantage
           of the free kayaking offered in the hostel. Imagine after a 6hr drive,
           we managed to hike and do kayaking?
         </p>
-      </Fade>
 
-      <Fade bottom>
         <p>Well it was the best way to end the day.</p>
-      </Fade>
 
-      <Fade bottom>
         <div className={general_blog_styles.iframe_box}>
           <iframe
             width="560"
@@ -86,15 +73,12 @@ export default function Blog_Rampestreken() {
             allowFullScreen
           ></iframe>{" "}
         </div>
-      </Fade>
 
-      <Fade bottom>
         <Img
           fluid={images.img2.childImageSharp.fluid}
           className={general_blog_styles.image}
           alt="image of a town surrounded by a lake and mountains seen from the top of a mountain"
         />
-      </Fade>
 
       <div className={general_blog_styles.divider}></div>
       {/* ============================================================= */}

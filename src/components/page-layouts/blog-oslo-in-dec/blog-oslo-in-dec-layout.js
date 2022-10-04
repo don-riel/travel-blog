@@ -18,46 +18,35 @@ export default function Blog_Oslo_in_Dec() {
         <h3>{title}</h3>
         <p className={general_blog_styles.date}>{date}</p>
       </div>
-      <Fade bottom>
         <Img
           fluid={images.img1.childImageSharp.fluid}
           className={general_blog_styles.image}
           alt="image of a street covered with christmas lights"
         />
-      </Fade>
-      <Fade bottom>
         <div className={general_blog_styles.img_caption}>
           <p>Karl Johan Street in December</p>
         </div>
-      </Fade>
 
       <div className={general_blog_styles.divider}></div>
 
-      <Fade bottom>
         <Img
           fluid={images.img2.childImageSharp.fluid}
           className={general_blog_styles.image}
           alt="image of a street covered with christmas lights"
         />
-      </Fade>
-      <Fade bottom>
         <div className={general_blog_styles.img_caption}>
           <p>Storgata in December</p>
         </div>
-      </Fade>
 
       <div className={general_blog_styles.divider}></div>
 
-      <Fade bottom>
         <p>{intro}</p>
         <p>
           I was quite busy as well with exams, presentations and work but I
           always make sure I balance everything else. Merry Christmas and Happy
           New Year!
         </p>
-      </Fade>
 
-      <Fade bottom>
         <div className={general_blog_styles.iframe_box}>
           <iframe
             width="560"
@@ -69,7 +58,6 @@ export default function Blog_Oslo_in_Dec() {
             allowFullScreen
           ></iframe>
         </div>
-      </Fade>
     </div>
   )
 }
